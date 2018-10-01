@@ -1,0 +1,114 @@
+COMMANDS FOR WALLETD
+
+Get Balance:
+curl -X POST -i -H "Accept: application/json" -d '{"params": {"address": "NGnHpCdKENjCRbk7qrmhH3HwBKXtfWq6MhhNX3jByNYDFjsGFJPWAEuhZ8PGwJvivfVJB3UfsAE7QHBYNu9njseHAgBeCKM"} ,"jsonrpc": "2.0", "id": "test","method":"getBalance"}' http://localhost:9090/json_rpc
+
+Transfer:
+curl -X POST -i -H "Accept: application/json" -d '{"params": {},"jsonrpc": "2.0", "id": "test","method":"transfer"}' http://localhost:9090/json_rpc
+
+Store:
+store
+
+Get Payments:
+get_payments
+
+Get Transfers:
+get_transfers
+
+Get_Height:
+get_height
+
+Reset:
+curl -X POST -i -H "Accept: application/json" -d '{"params": {},"jsonrpc": "2.0", "id": "test","method":"reset"}' http://localhost:9090/json_rpc
+
+Create Address:
+curl -X POST -i -H "Accept: application/json" -d '{"params": {},"jsonrpc": "2.0", "id": "test","method":"createAddress"}' http://localhost:9090/json_rpc
+
+Delete Address:
+curl -X POST -i -H "Accept: application/json" -d '{"params": {},"jsonrpc": "2.0", "id": "test","method":"deleteAddress"}' http://localhost:9090/json_rpc
+
+Get Spend Keys:
+getSpendKeys
+
+Get Block Hashes:
+getBlockHashes
+
+Get Transaction Hashes
+getTransactionHashes
+
+Get Transactions:
+getTransactions
+
+Get Unconfirmed Transaction Hashes:
+getUnconfirmedTransactionHashes
+
+Get Transaction:
+getTransaction
+
+Send Transaction:
+sendTransaction
+
+Create Delayed Transaction:
+createDelayedTransaction
+
+Get Delayed Transaction Hashes:
+getDelayedTransactionHashes
+
+Delete Delayed Transaction:
+deleteDelayedTransaction
+
+Send Delayed Transaction:
+sendDelayedTransaction
+
+Get View Key:
+getViewKey
+
+Get Status:
+curl -X POST -i -H "Accept: application/json" -d '{"params": {},"jsonrpc": "2.0", "id": "test","method":"getStatus"}' http://localhost:9090/json_rpc
+
+Get Addresses:
+getAddresses
+
+COMMANDS FOR DAEMON
+
+Get Info:
+curl http://localhost:30159/getinfo
+
+Get Height:
+curl http://localhost:30159/getheight
+
+Get Transactions:
+gettransactions
+
+Send Raw Transaction
+sendrawtransaction
+
+To Start Mining
+start_mining
+
+To Stop Mining
+stop_mining
+
+Binary RPC Interface
+
+Get Binary Blocks
+curl http://localhost:30159/getblocks.bin&height=5000000
+
+Binary Query Blocks
+curl http://localhost:30159/queryblocks.bin&height=5000000
+
+Binary Query Blocks Lite
+curl http://localhost:30159/queryblockslite.bin&height=5000000
+
+Binary Get O Indexes
+curl http://localhost:30159/get_o_indexes.bin&height=5000000
+
+Binary Get Random Outs
+curl http://localhost:30159/getrandom_outs.bin&height=5000000
+
+Binary Get Pool Changes
+curl http://localhost:30159/get_pool_changes.bin&height=5000000
+
+Binary Get Pool Changes Lite
+curl http://localhost:30159/get_pool_changes_lite.bin&height=5000000
+
