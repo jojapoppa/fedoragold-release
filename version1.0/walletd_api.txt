@@ -1,9 +1,24 @@
 COMMANDS FOR WALLETD
 
 Get Balance:
+getBalance
+res.locked_amount
+res.available_balance
+
 curl -X POST -i -H "Accept: application/json" -d '{"params": {"address": "NGnHpCdKENjCRbk7qrmhH3HwBKXtfWq6MhhNX3jByNYDFjsGFJPWAEuhZ8PGwJvivfVJB3UfsAE7QHBYNu9njseHAgBeCKM"} ,"jsonrpc": "2.0", "id": "test","method":"getBalance"}' http://127.0.0.1:9090/json_rpc
 
 Transfer:
+transfer
+req.destinations.begin
+req.destinations.end
+req.address
+req.amount
+req.payment_id
+req.fee
+req.mixin
+req.unlock_time
+res.tx_hash
+
 curl -X POST -i -H "Accept: application/json" -d '{"params": {},"jsonrpc": "2.0", "id": "test","method":"transfer"}' http://localhost:9090/json_rpc
 
 Store:
@@ -38,6 +53,10 @@ getTransactionHashes
 
 Get Transactions:
 getTransactions
+req.txs_hashes
+res.status
+res.txs_as_hex
+res.missed_tx
 
 Get Unconfirmed Transaction Hashes:
 getUnconfirmedTransactionHashes
@@ -73,15 +92,34 @@ COMMANDS FOR DAEMON
 
 Get Info:
 curl http://localhost:30159/getinfo
+res.height
+res.difficulty
+res.tx_count
+res.tx_pool_size
+res.alt_blocks_count
+res.outgoing_connections_count
+res.incoming_connections_count
+res.white_peerlist_size
+res.grey_peerlist_size
+res.last_known_block_index
+res.status
 
 Get Height:
 curl http://localhost:30159/getheight
+res.height
+res.status
 
 Get Transactions:
 gettransactions
+req.txs_hashes
+res.status
+res.txs_as_hex
+res.missed_tx
 
 Send Raw Transaction
 sendrawtransaction
+req.tx_as_hex
+res.status
 
 To Start Mining
 start_mining
@@ -89,22 +127,57 @@ start_mining
 To Stop Mining
 stop_mining
 
-Binary RPC Interface
+Binary RPC Interfaces
 
 Get Binary Blocks
 curl http://localhost:30159/getblocks.bin&height=5000000
+req.blockids
+res.status
+res.current_height
+res.start_height
+res.blocks.size
+res.block
+res.txcount
+res.transaction
 
 Binary Query Blocks
 curl http://localhost:30159/queryblocks.bin&height=5000000
+req.blockids
+req.timestamp
+req.startHeight
+req.currentHeight
+req.fullOffset
+res.status
+res.start_height
+res.current_height
+res.full_offset
 
 Binary Query Blocks Lite
 curl http://localhost:30159/queryblockslite.bin&height=5000000
+req.blockids
+req.timestamp
+req.startHeight
+req.currentHeight
+req.fullOffset
+res.status
+res.start_height
+res.current_height
+res.full_offset
 
-Binary Get O Indexes
+Binary Get Global Output Indexes
 curl http://localhost:30159/get_o_indexes.bin&height=5000000
+req.txid
+req.outputIndexes
+res.status
+res.o_indexes
+res.o_indexes_size
 
 Binary Get Random Outs
 curl http://localhost:30159/getrandom_outs.bin&height=5000000
+res.status
+res.begin
+res.end
+res.ofa
 
 Binary Get Pool Changes
 curl http://localhost:30159/get_pool_changes.bin&height=5000000
