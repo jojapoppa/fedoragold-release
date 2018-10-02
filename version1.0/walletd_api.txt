@@ -1,7 +1,7 @@
 COMMANDS FOR WALLETD
 
 Get Balance:
-curl -X POST -i -H "Accept: application/json" -d '{"params": {"address": "NGnHpCdKENjCRbk7qrmhH3HwBKXtfWq6MhhNX3jByNYDFjsGFJPWAEuhZ8PGwJvivfVJB3UfsAE7QHBYNu9njseHAgBeCKM"} ,"jsonrpc": "2.0", "id": "test","method":"getBalance"}' http://localhost:9090/json_rpc
+curl -X POST -i -H "Accept: application/json" -d '{"params": {"address": "NGnHpCdKENjCRbk7qrmhH3HwBKXtfWq6MhhNX3jByNYDFjsGFJPWAEuhZ8PGwJvivfVJB3UfsAE7QHBYNu9njseHAgBeCKM"} ,"jsonrpc": "2.0", "id": "test","method":"getBalance"}' http://127.0.0.1:9090/json_rpc
 
 Transfer:
 curl -X POST -i -H "Accept: application/json" -d '{"params": {},"jsonrpc": "2.0", "id": "test","method":"transfer"}' http://localhost:9090/json_rpc
