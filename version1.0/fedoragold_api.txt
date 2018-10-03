@@ -1,0 +1,235 @@
+COMMANDS FOR WALLETD (on port 9090)
+
+Get Balance (port 9090):
+getBalance
+res.locked_amount
+res.available_balance
+
+Transfer (port 9090):
+transfer
+req.destinations.begin
+req.destinations.end
+req.address
+req.amount
+req.payment_id
+req.fee
+req.mixin
+req.unlock_time
+res.tx_hash
+
+Store (port 9090):
+store
+res.status
+
+Get Payments (port 9090):
+get_payments
+res.tx_hash
+res.amount
+res.block_height
+res.unlock_time
+
+Get Transfers (port 9090):
+get_transfers
+res.time
+res.output
+res.transactionHash
+res.amount
+res.fee
+res.address
+res.blockIndex
+res.unlockTime
+res.paymentId
+
+Get_Height (port 9090):
+get_height
+res.height
+
+Reset (port 9090):
+reset
+req.viewSecretKey (optional)
+
+Create Address (port 9090):
+createAddress
+req.spendSecretKey or req.spendPublicKey (both are optional)
+res.address
+
+Delete Address (port 9090):
+deleteAddress
+req.address
+
+Get Spend Keys (port 9090):
+getSpendKeys
+req.address
+res.spendPublicKey
+res.spendSecretKey
+
+Get Block Hashes (port 9090):
+getBlockHashes
+req.firstBlockIndex
+req.blockCount
+res.blockHashes
+
+Get Transaction Hashes (port 9090):
+getTransactionHashes
+req.addresses
+req.blockHash or req.firstBlockIndex
+req.blockCount
+req.paymentId
+res.items
+
+Get Transactions (port 9090):
+getTransactions
+req.txs_hashes
+res.status
+res.txs_as_hex
+res.missed_tx
+
+Get Unconfirmed Transaction Hashes (port 9090):
+getUnconfirmedTransactionHashes
+req.addresses
+res.transactionHashes
+
+Get Transaction (port 9090):
+getTransaction
+req.transactionHash
+res.transaction
+
+Send Transaction (port 9090):
+sendTransaction
+res.transactionHash
+
+Create Delayed Transaction (port 9090):
+createDelayedTransaction
+res.transactionHash
+
+Get Delayed Transaction Hashes (port 9090):
+getDelayedTransactionHashes
+res.transactionHashes
+
+Delete Delayed Transaction (port 9090):
+deleteDelayedTransaction
+req.transactionHash
+
+Send Delayed Transaction (port 9090):
+sendDelayedTransaction
+req.transactionHash
+
+Get View Key (port 9090):
+getViewKey
+res.viewSecretKey
+
+Get Status (port 9090):
+getStatus
+res.blockCount
+res.knownBlockCount
+res.lastBlockHash
+res.peerCount
+
+Get Addresses (port 9090):
+getAddresses
+res.addresses
+
+COMMANDS FOR DAEMON (on port 30159)
+
+Get Info (port 30159):
+getinfo
+res.height
+res.difficulty
+res.tx_count
+res.tx_pool_size
+res.alt_blocks_count
+res.outgoing_connections_count
+res.incoming_connections_count
+res.white_peerlist_size
+res.grey_peerlist_size
+res.last_known_block_index
+res.status
+
+Get Height (port 30159):
+getheight
+res.height
+res.status
+
+Get Transactions (port 30159):
+gettransactions
+req.txs_hashes
+res.status
+res.txs_as_hex
+res.missed_tx
+
+Send Raw Transaction (port 30159):
+sendrawtransaction
+req.tx_as_hex
+res.status
+
+To Start Mining (port 30159):
+start_mining
+req.miner_address
+res.status
+
+To Stop Mining (port 30159):
+stop_mining
+res.status
+
+Binary RPC Interfaces
+
+Get Binary Blocks (port 30159):
+getblocks.bin
+req.blockids
+res.status
+res.current_height
+res.start_height
+res.blocks.size
+res.block
+res.txcount
+res.transaction
+
+Binary Query Blocks (port 30159):
+req.blockids
+req.timestamp
+req.startHeight
+req.currentHeight
+req.fullOffset
+res.status
+res.start_height
+res.current_height
+res.full_offset
+
+Binary Query Blocks Lite (port 30159):
+req.blockids
+req.timestamp
+req.startHeight
+req.currentHeight
+req.fullOffset
+res.status
+res.start_height
+res.current_height
+res.full_offset
+
+Binary Get Global Output Indexes (port 30159):
+req.txid
+req.outputIndexes
+res.status
+res.o_indexes
+res.o_indexes_size
+
+Binary Get Random Outs (port 30159):
+res.status
+res.begin
+res.end
+res.ofa
+
+Binary Get Pool Changes (port 30159):
+req.tailBlockId
+req.knownTxsIds
+rsp.deletedTxsIds
+rsp.addedTxs
+rsp.status
+
+Binary Get Pool Changes Lite (port 30159):
+req.tailBlockId
+req.knownTxsIds
+rsp.addedTxs
+rsp.deletedTxsIds
+rsp.status
+
