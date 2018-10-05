@@ -150,6 +150,52 @@ getheight
 res.height
 res.status
 
+Get Block Count (port 30159):
+getblockcount
+res.count
+res.status
+
+Get Block Hash (port 30159):
+on_getblockhash
+req.height
+res.blockid
+
+Get Block Template (port 30159):
+getblocktemplate
+req.wallet_address
+req.reserve_size
+res.difficulty
+res.height
+res.reserved_offset
+res.blocktemplate_blob
+res.status
+
+Get Currency ID (port 30159):
+getcurrencyid
+res.currency_id_blob
+
+Submit Block (port 30159):
+submitblock
+req.size
+res.status
+
+Get Last Block Header (port 30159):
+getlastblockheader
+res.block_header
+res.status
+
+Get Block By Hash (port 30159):
+getblockheaderbyhash
+req.hash
+res.block_header
+res.status
+
+Get Block Header By Height (port 30159):
+getblockheaderbyheight
+req.height
+res.block_header
+res.status
+
 Get Transactions (port 30159):
 gettransactions
 req.txs_hashes
