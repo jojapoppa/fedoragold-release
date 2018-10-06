@@ -1,3 +1,102 @@
+Daemon rpc-api Commands
+
+Get Info (port 30159):
+getinfo
+res.height
+res.difficulty
+res.tx_count
+res.tx_pool_size
+res.alt_blocks_count
+res.outgoing_connections_count
+res.incoming_connections_count
+res.white_peerlist_size
+res.grey_peerlist_size
+res.last_known_block_index
+res.status
+
+curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getinfo
+
+Get Height (port 30159):
+getheight
+res.height
+res.status
+
+curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getheight
+
+Get Block Hash (port 30159):
+getblockhash
+req.height
+res.blockid
+
+curl -X GET -i -H "Accept: application/json" -d '{"height": 100 ,"jsonrpc": "2.0"}' http://localhost:30159/getblockhash
+
+Get Block Template (port 30159):
+getblocktemplate
+req.wallet_address
+req.reserve_size
+res.difficulty
+res.height
+res.reserved_offset
+res.blocktemplate_blob
+res.status
+
+curl -X GET -i -H "Accept: application/json" -d '{"wallet_address": "NGkVYFneqwsFDALTTvrabP9FAAE8b23rhYB9uKgNcNM2SSvVbguF7fm4Fd66EsW58wUzhADZ1mGobXmSx7riC2591VbyPNC" ,"jsonrpc": "2.0"}' http://localhost:30159/getblocktemplate
+
+Get Blocks (port 30159):
+getblocks
+req.block_ids
+res.status
+res.current_height
+res.start_height
+res.blocks.size
+res.block
+res.txcount
+res.transaction
+
+curl -X GET -i -H "Accept: application/json" -d '{"block_ids":["2c31c5504ebbb5db5a4cb8993ebcdb808853906219dc95d897f7e601864e55c2"],"jsonrpc": "2.0"}' http://localhost:30159/getblocks
+
+Get Currency ID (port 30159):
+getcurrencyid
+res.currency_id_blob
+
+curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getcurrencyid
+
+Get Last Block Header (port 30159):
+getlastblockheader
+res.block_header
+res.status
+
+curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getlastblockheader
+
+Get Block By Hash (port 30159):
+getblockheaderbyhash
+req.hash
+res.block_header
+res.status
+
+curl -X GET -i -H "Accept: application/json" -d '{"hash": "7fcd69871f624f18c74882de0d0edc83b4a24d2fd3e7fcaa83056980e220e10b", "jsonrpc": "2.0"}' http://localhost:30159/getblockheaderbyhash
+
+Get Block Header By Height (port 30159):
+getblockheaderbyheight
+req.height
+res.block_header
+res.status
+
+curl -X GET -i -H "Accept: application/json" -d '{"height": 52, "jsonrpc": "2.0"}' http://localhost:30159/getblockheaderbyheight
+
+Get Transactions (port 30159):
+gettransactions
+req.txs_hashes
+res.status
+res.txs_as_hex
+res.missed_tx
+
+curl -X GET -i -H "Accept: application/json" -d '{"txs_hashes": ["6d1bcb9d472bd78ec8eb920ba1e46f514a8f635959d897b842910a5f1d5e78a9"], "jsonrpc": "2.0"}' http://localhost:30159/gettransactions
+
+
+
+
+
 COMMANDS FOR WALLETD (on port 9090)
 
 Get Balance (port 9090):
