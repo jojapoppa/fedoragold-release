@@ -16,6 +16,8 @@ res.status
 
 curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getinfo
 
+{"alt_blocks_count":0,"difficulty":162459373,"grey_peerlist_size":24,"height":46709,"incoming_connections_count":0,"last_known_block_index":46708,"outgoing_connections_count":8,"status":"OK","tx_count":3193,"tx_pool_size":0,"white_peerlist_size":29}
+
 Get Height (port 30159):
 getheight
 res.height
@@ -23,12 +25,16 @@ res.status
 
 curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getheight
 
+{"height":46711,"status":"OK"}
+
 Get Block Hash (port 30159):
 getblockhash
 req.height
 res.blockid
 
 curl -X GET -i -H "Accept: application/json" -d '{"height": 100 ,"jsonrpc": "2.0"}' http://localhost:30159/getblockhash
+
+{"hash":"a0972fb6da177093ac59f6eeeed884bca13ff306f220f6f22e0d135477d3e9ae"}
 
 Get Block Template (port 30159):
 getblocktemplate
@@ -42,24 +48,25 @@ res.status
 
 curl -X GET -i -H "Accept: application/json" -d '{"wallet_address": "NGkVYFneqwsFDALTTvrabP9FAAE8b23rhYB9uKgNcNM2SSvVbguF7fm4Fd66EsW58wUzhADZ1mGobXmSx7riC2591VbyPNC" ,"jsonrpc": "2.0"}' http://localhost:30159/getblocktemplate
 
-Get Blocks (port 30159):
-getblocks
-req.block_ids
-res.status
-res.current_height
-res.start_height
-res.blocks.size
-res.block
-res.txcount
-res.transaction
+{"blocktemplate_blob":"0100afa9e1dd05e4dafb83788bda04377fdde18d25e25d99761d161bbaecdb6c2c7b2a87127f530000000001a8ed0201fff8ec0206d7c63802045eea51b77740ff00a533467b1ac7c676e94a4e313ef7565fc8b80a00c5a4c5c09fab0302cd0ee0b086285d107498be1e9315642e6c86b5dd397ba35603f25d4ff965987b80d293ad030264021540cbde6fffd7c6b02faa0c9731610d2015439f0a81dc47bf5a1f0670f080a0d9e61d029f8443ef01b50af67a0274e393d1accf89d493ecb86cc0c5d66556a290ec245580a0be819501024f2ff70a6abd4d6ba72f6d9fa89d407ba63f94fc5bc8c20c7306bc25dba7911f80d0dbc3f4020287fc910142e9400cc23a8157de53c2bcbc0f36a65889501fb82075e301d24ba121015c7d626a8ead6324409cecbea76c72704fbe84b1318d613de1f2d120cf41a94400","difficulty":134677291,"height":46712,"reserved_offset":0,"status":"OK"}
 
-curl -X GET -i -H "Accept: application/json" -d '{"block_ids":["2c31c5504ebbb5db5a4cb8993ebcdb808853906219dc95d897f7e601864e55c2"],"jsonrpc": "2.0"}' http://localhost:30159/getblocks
+Get Block (port 30159):
+getblock
+req.height
+res.transactionHashes
+res.status
+
+curl -X GET -i -H "Accept: application/json" -d '{"height":29287,"jsonrpc": "2.0"}' http://localhost:30159/getblock
+
+{"status":"OK","transactionHashes":[]}
 
 Get Currency ID (port 30159):
 getcurrencyid
 res.currency_id_blob
 
 curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getcurrencyid
+
+{"currency_id_blob":"c01db05b73a7bdb03cff6ce9b9104096523b542ee40944e7726c3f589eff618d"}
 
 Get Last Block Header (port 30159):
 getlastblockheader
@@ -68,220 +75,7 @@ res.status
 
 curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getlastblockheader
 
-Get Block By Hash (port 30159):
-getblockheaderbyhash
-req.hash
-res.block_header
-res.status
-
-curl -X GET -i -H "Accept: application/json" -d '{"hash": "7fcd69871f624f18c74882de0d0edc83b4a24d2fd3e7fcaa83056980e220e10b", "jsonrpc": "2.0"}' http://localhost:30159/getblockheaderbyhash
-
-Get Block Header By Height (port 30159):
-getblockheaderbyheight
-req.height
-res.block_header
-res.status
-
-curl -X GET -i -H "Accept: application/json" -d '{"height": 52, "jsonrpc": "2.0"}' http://localhost:30159/getblockheaderbyheight
-
-Get Transactions (port 30159):
-gettransactions
-req.txs_hashes
-res.status
-res.txs_as_hex
-res.missed_tx
-
-curl -X GET -i -H "Accept: application/json" -d '{"txs_hashes": ["6d1bcb9d472bd78ec8eb920ba1e46f514a8f635959d897b842910a5f1d5e78a9"], "jsonrpc": "2.0"}' http://localhost:30159/gettransactions
-
-
-
-
-
-COMMANDS FOR WALLETD (on port 9090)
-
-Get Balance (port 9090):
-getBalance
-res.locked_amount
-res.available_balance
-
-Transfer (port 9090):
-transfer
-req.destinations.begin
-req.destinations.end
-req.address
-req.amount
-req.payment_id
-req.fee
-req.mixin
-req.unlock_time
-res.tx_hash
-
-Store (port 9090):
-store
-res.status
-
-Get Payments (port 9090):
-get_payments
-res.tx_hash
-res.amount
-res.block_height
-res.unlock_time
-
-Get Transfers (port 9090):
-get_transfers
-res.time
-res.output
-res.transactionHash
-res.amount
-res.fee
-res.address
-res.blockIndex
-res.unlockTime
-res.paymentId
-
-Get_Height (port 9090):
-get_height
-res.height
-
-Reset (port 9090):
-reset
-req.viewSecretKey (optional)
-
-Create Address (port 9090):
-createAddress
-req.spendSecretKey or req.spendPublicKey (both are optional)
-res.address
-
-Delete Address (port 9090):
-deleteAddress
-req.address
-
-Get Spend Keys (port 9090):
-getSpendKeys
-req.address
-res.spendPublicKey
-res.spendSecretKey
-
-Get Block Hashes (port 9090):
-getBlockHashes
-req.firstBlockIndex
-req.blockCount
-res.blockHashes
-
-Get Transaction Hashes (port 9090):
-getTransactionHashes
-req.addresses
-req.blockHash or req.firstBlockIndex
-req.blockCount
-req.paymentId
-res.items
-
-Get Transactions (port 9090):
-getTransactions
-req.txs_hashes
-res.status
-res.txs_as_hex
-res.missed_tx
-
-Get Unconfirmed Transaction Hashes (port 9090):
-getUnconfirmedTransactionHashes
-req.addresses
-res.transactionHashes
-
-Get Transaction (port 9090):
-getTransaction
-req.transactionHash
-res.transaction
-
-Send Transaction (port 9090):
-sendTransaction
-res.transactionHash
-
-Create Delayed Transaction (port 9090):
-createDelayedTransaction
-res.transactionHash
-
-Get Delayed Transaction Hashes (port 9090):
-getDelayedTransactionHashes
-res.transactionHashes
-
-Delete Delayed Transaction (port 9090):
-deleteDelayedTransaction
-req.transactionHash
-
-Send Delayed Transaction (port 9090):
-sendDelayedTransaction
-req.transactionHash
-
-Get View Key (port 9090):
-getViewKey
-res.viewSecretKey
-
-Get Status (port 9090):
-getStatus
-res.blockCount
-res.knownBlockCount
-res.lastBlockHash
-res.peerCount
-
-Get Addresses (port 9090):
-getAddresses
-res.addresses
-
-COMMANDS FOR DAEMON (on port 30159)
-
-Get Info (port 30159):
-getinfo
-res.height
-res.difficulty
-res.tx_count
-res.tx_pool_size
-res.alt_blocks_count
-res.outgoing_connections_count
-res.incoming_connections_count
-res.white_peerlist_size
-res.grey_peerlist_size
-res.last_known_block_index
-res.status
-
-Get Height (port 30159):
-getheight
-res.height
-res.status
-
-Get Block Count (port 30159):
-getblockcount
-res.count
-res.status
-
-Get Block Hash (port 30159):
-getblockhash
-req.height
-res.blockid
-
-Get Block Template (port 30159):
-getblocktemplate
-req.wallet_address
-req.reserve_size
-res.difficulty
-res.height
-res.reserved_offset
-res.blocktemplate_blob
-res.status
-
-Get Currency ID (port 30159):
-getcurrencyid
-res.currency_id_blob
-
-Submit Block (port 30159):
-submitblock
-req.size
-res.status
-
-Get Last Block Header (port 30159):
-getlastblockheader
-res.block_header
-res.status
+{"block_header":{"depth":0,"difficulty":97183256,"hash":"3a6525194dd5994fbb8437081f8e2156e591248e2bcff8bc79266e057332cca5","height":46720,"major_version":1,"minor_version":0,"nonce":1881030796,"orphan_status":false,"prev_hash":"c991d32f0d5d7e34819198dd73aa606989613452e63a47176da089a7e8f8b614","reward":148947908800,"timestamp":1538807295}
 
 Get Block By Hash (port 30159):
 getblockheaderbyhash
@@ -289,92 +83,49 @@ req.hash
 res.block_header
 res.status
 
+curl -X GET -i -H "Accept: application/json" -d '{"hash": "91f1831e43c7e4850d3cff8daf8483a0994c58b285e0a6922b718e8f271a66e9", "jsonrpc": "2.0"}' http://localhost:30159/getblockheaderbyhash
+
+{"block_header":{"depth":423,"difficulty":225552038,"hash":"7fcd69871f624f18c74882de0d0edc83b4a24d2fd3e7fcaa83056980e220e10b","height":46298,"major_version":1,"minor_version":0,"nonce":3108855520,"orphan_status":false,"prev_hash":"4f90b48cf3a7564357bbef44b16e75a1b32061e1f1b8a6c8452e47ae991a82f4","reward":148908845179,"timestamp":1538794247},"status":"OK"}
+
 Get Block Header By Height (port 30159):
 getblockheaderbyheight
 req.height
 res.block_header
 res.status
 
+curl -X GET -i -H "Accept: application/json" -d '{"height": 16639, "jsonrpc": "2.0"}' http://localhost:30159/getblockheaderbyheight
+
+{"block_header":{"depth":39017,"difficulty":47416,"hash":"91f1831e43c7e4850d3cff8daf8483a0994c58b285e0a6922b718e8f271a66e9","height":16639,"major_version":1,"minor_version":0,"nonce":2286654608,"orphan_status":false,"prev_hash":"68d9f7dda1f986c70a7e06990b3ab609078dfc24e9a540ea1eea1708c8fcce5c","reward":148974723793,"timestamp":1538009033}
+
 Get Transactions (port 30159):
 gettransactions
-req.txs_hashes
-res.status
-res.txs_as_hex
-res.missed_tx
-
-Send Raw Transaction (port 30159):
-sendrawtransaction
-req.tx_as_hex
+res.txs
 res.status
 
-To Start Mining (port 30159):
-start_mining
-req.miner_address
-res.status
+curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/gettransactions
 
-To Stop Mining (port 30159):
-stop_mining
-res.status
+just a sequential list of transactions...
 
-Binary RPC Interfaces
-
-Get Binary Blocks (port 30159):
-getblocks.bin
-req.blockids
-res.status
-res.current_height
-res.start_height
-res.blocks.size
+Get Transaction (port 30159):
+gettransaction
+req.txhash
+req.blknum
+req.txnum
+res.global_output_indexes
+res.hash
 res.block
-res.txcount
-res.transaction
-
-Binary Query Blocks (port 30159):
-req.blockids
-req.timestamp
-req.startHeight
-req.currentHeight
-req.fullOffset
+res.blockheight
+res.prefix
+res.version
+res.unlocktime
+res.inputamt
+res.outputamt
 res.status
-res.start_height
-res.current_height
-res.full_offset
 
-Binary Query Blocks Lite (port 30159):
-req.blockids
-req.timestamp
-req.startHeight
-req.currentHeight
-req.fullOffset
-res.status
-res.start_height
-res.current_height
-res.full_offset
+curl -X GET -i -H "Accept: application/json" -d '{"txhash": "6d1bcb9d472bd78ec8eb920ba1e46f514a8f635959d897b842910a5f1d5e78a9", "jsonrpc": "2.0"}' http://localhost:30159/gettransaction
+or...
+curl -X GET -i -H "Accept: application/json" -d '{"txhash": "0000000000000000000000000000000000000000000000000000000000000000", "blknum":29287,"txnum":0,"jsonrpc": "2.0"}'  http://localhost:30159/gettransaction
 
-Binary Get Global Output Indexes (port 30159):
-req.txid
-req.outputIndexes
-res.status
-res.o_indexes
-res.o_indexes_size
+{"block":"579459304603c1862b0e6bce033620230ce9bd24ee951e463cf445ba49bd9326","blockheight":29287,"global_output_indexes":[1,2890,1480,24109,24004,29333,29300],"hash":"6d1bcb9d472bd78ec8eb920ba1e46f514a8f635959d897b842910a5f1d5e78a9","inputamt":0,"outputamt":148946649189,"prefix":"6d1bcb9d472bd78ec8eb920ba1e46f514a8f635959d897b842910a5f1d5e78a9","status":"OK","unlocktime":29335,"version":1}
 
-Binary Get Random Outs (port 30159):
-res.status
-res.begin
-res.end
-res.ofa
-
-Binary Get Pool Changes (port 30159):
-req.tailBlockId
-req.knownTxsIds
-rsp.deletedTxsIds
-rsp.addedTxs
-rsp.status
-
-Binary Get Pool Changes Lite (port 30159):
-req.tailBlockId
-req.knownTxsIds
-rsp.addedTxs
-rsp.deletedTxsIds
-rsp.status
 
