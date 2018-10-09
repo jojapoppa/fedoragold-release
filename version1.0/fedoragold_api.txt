@@ -117,6 +117,7 @@ res.global_output_indexes
 res.hash
 res.block
 res.blockheight
+res.paymentid
 res.prefix
 res.version
 res.unlocktime
@@ -128,6 +129,6 @@ curl -X GET -i -H "Accept: application/json" -d '{"txhash": "e6ef1167b53b25e62e9
 or...
 curl -X GET -i -H "Accept: application/json" -d '{"txhash": "0000000000000000000000000000000000000000000000000000000000000000", "blknum":29287,"txnum":0,"jsonrpc": "2.0"}'  http://localhost:30159/gettransaction
 
-{"block":"579459304603c1862b0e6bce033620230ce9bd24ee951e463cf445ba49bd9326","blockheight":29287,"global_output_indexes":[1,2890,1480,24109,24004,29333,29300],"hash":"6d1bcb9d472bd78ec8eb920ba1e46f514a8f635959d897b842910a5f1d5e78a9","inputamt":0,"outputamt":148946649189,"prefix":"6d1bcb9d472bd78ec8eb920ba1e46f514a8f635959d897b842910a5f1d5e78a9","status":"OK","unlocktime":29335,"version":1}
 
+{"block":"a2dfa0190cf07e42b47782c2c218cb9d90b6524f978775605f9caf5aca443d99","blockheight":56481,"global_output_indexes":[384,402,395,405,433,5863,14413,52002,1266,6720,1378,1086,678],"hash":"e6ef1167b53b25e62e9c38f96e53662dcfc7944f4f2dc1fe82fe1a649861340c","inputamt":532020496250,"outputamt":532000496250,"paymentid":"0000000000000000000000000000000000000000000000000000000000000000","prefix":"741651ffab89c305df44a7a7daa5f5392bb5a932fe311add08f9b1e2c5b4ceb4","status":"","unlocktime":0,"version":1}
 

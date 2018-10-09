@@ -1,0 +1,164 @@
+2018-Oct-09 17:05:50.057728 INFO [daemon] fedoragold v1.1.1.1()
+2018-Oct-09 17:05:50.057858 INFO [daemon] Module folder: ./fedoragold_daemon
+2018-Oct-09 17:05:50.058626 INFO [daemon] Initializing p2p server...
+2018-Oct-09 17:05:50.058866 INFO [node_server] Binding on 0.0.0.0:30158
+2018-Oct-09 17:05:50.058933 INFO [node_server] Net service binded on 0.0.0.0:30158
+2018-Oct-09 17:05:50.058980 INFO [node_server] Attempting to add IGD port mapping.
+2018-Oct-09 17:05:54.067094 INFO [node_server] No IGD was found.
+2018-Oct-09 17:05:54.067193 INFO [daemon] P2p server initialized OK
+2018-Oct-09 17:05:54.067220 INFO [daemon] Initializing core...
+2018-Oct-09 17:05:54.069065 INFO [Blockchain] Loading blockchain...
+2018-Oct-09 17:05:54.069188 INFO [BlockCacheSerializer] - loading block index...
+2018-Oct-09 17:05:54.087143 INFO [BlockCacheSerializer] - loading transaction map...
+2018-Oct-09 17:05:54.102312 INFO [BlockCacheSerializer] - loading spent keys...
+2018-Oct-09 17:05:54.153079 INFO [BlockCacheSerializer] - loading outputs...
+2018-Oct-09 17:05:54.191643 INFO [BlockCacheSerializer] - loading multi-signature outputs...
+2018-Oct-09 17:05:54.191731 INFO [BlockCacheSerializer] Serialization time: 122ms
+2018-Oct-09 17:05:54.191770 INFO [Blockchain] Loading blockchain indices for BlockchainExplorer...
+2018-Oct-09 17:05:54.191850 INFO [BlockchainIndicesSerializer] - loading paymentID index...
+2018-Oct-09 17:05:54.191888 INFO [BlockchainIndicesSerializer] - loading timestamp index...
+2018-Oct-09 17:05:54.210266 INFO [BlockchainIndicesSerializer] - loading generated transactions index...
+2018-Oct-09 17:05:54.221826 INFO [Blockchain] Blockchain initialized. last block: 56622, d0.h9.m18.s2 time ago, current difficulty: 46214622
+2018-Oct-09 17:05:54.221956 INFO [daemon] Core initialized OK
+2018-Oct-09 17:05:54.222103 INFO [daemon] Starting core rpc server on address 127.0.0.1:30159
+2018-Oct-09 17:05:54.222194 INFO [daemon] Core rpc server started ok
+2018-Oct-09 17:05:54.222238 INFO [daemon] Starting p2p net loop...
+2018-Oct-09 17:05:54.222270 INFO [node_server] Starting node_server
+2018-Oct-09 17:05:54.222304 INFO [node_server]   acceptLoop started...
+2018-Oct-09 17:05:54.222343 INFO [node_server]   onIdle started...
+2018-Oct-09 17:05:54.222380 INFO [node_server]   timedSyncLoop started...
+2018-Oct-09 17:05:54.222416 INFO [node_server]   timeoutLoop started...
+2018-Oct-09 17:05:54.426393 INFO [protocol] [54.69.108.93:30158 OUT] Sync data returned unknown top block: 56622 -> 57924 [1302 blocks (0 days) behind] 
+2018-Oct-09 17:05:54.426393 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 17:05:55.042985 INFO [protocol] [213.32.95.66:30158 OUT] Sync data returned unknown top block: 56622 -> 57924 [1302 blocks (0 days) behind] 
+2018-Oct-09 17:05:55.042985 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 17:05:55.305208 INFO [protocol] [35.225.160.150:30158 OUT] Sync data returned unknown top block: 56622 -> 57924 [1302 blocks (0 days) behind] 
+2018-Oct-09 17:05:55.305208 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 17:05:55.659372 INFO [protocol] [18.191.2.241:30158 OUT] Sync data returned unknown top block: 56630 -> 57924 [1294 blocks (0 days) behind] 
+2018-Oct-09 17:05:55.659372 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 17:05:56.225616 INFO [protocol] [18.216.197.204:30158 OUT] Sync data returned unknown top block: 56657 -> 57924 [1267 blocks (0 days) behind] 
+2018-Oct-09 17:05:56.225616 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 17:06:11.911124 INFO [protocol] [54.86.25.3:30158 OUT] Sync data returned unknown top block: 57290 -> 57924 [634 blocks (0 days) behind] 
+2018-Oct-09 17:06:11.911124 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 17:06:28.900304 INFO [protocol] [54.69.108.93:30158 OUT] SYNCHRONIZED OK
+2018-Oct-09 17:06:28.900605 INFO [protocol] 
+2018-Oct-09 17:06:28.900605 INFO [protocol] **********************************************************************
+2018-Oct-09 17:06:28.900605 INFO [protocol] You are now synchronized with the network. You may now start simplewallet.
+2018-Oct-09 17:06:28.900605 INFO [protocol] 
+2018-Oct-09 17:06:28.900605 INFO [protocol] Please note, that the blockchain will be saved only after you quit the daemon with "exit" command or if you use "save" command.
+2018-Oct-09 17:06:28.900605 INFO [protocol] Otherwise, you will possibly need to synchronize the blockchain again.
+2018-Oct-09 17:06:28.900605 INFO [protocol] 
+2018-Oct-09 17:06:28.900605 INFO [protocol] Use "help" command to see the list of available commands.
+2018-Oct-09 17:06:28.900605 INFO [protocol] **********************************************************************
+2018-Oct-09 17:06:47.615148 INFO [core] 
+2018-Oct-09 17:06:47.615148 INFO [core] **********************************************************************
+2018-Oct-09 17:06:47.615148 INFO [core] The daemon will start synchronizing with the network. It may take up to several hours.
+2018-Oct-09 17:06:47.615148 INFO [core] 
+2018-Oct-09 17:06:47.615148 INFO [core] You can set the level of process detailization* through "set_log <level>" command*, where <level> is between 0 (no details) and 4 (very verbose).
+2018-Oct-09 17:06:47.615148 INFO [core] 
+2018-Oct-09 17:06:47.615148 INFO [core] Use "help" command to see the list of available commands.
+2018-Oct-09 17:06:47.615148 INFO [core] 
+2018-Oct-09 17:06:47.615148 INFO [core] Note: in case you need to interrupt the process, use "exit" command. Otherwise, the current progress won't be saved.
+2018-Oct-09 17:06:47.615148 INFO [core] **********************************************************************
+2018-Oct-09 17:14:17.314164 INFO [Blockchain] ----- BLOCK ADDED AS ALTERNATIVE ON HEIGHT 57940
+2018-Oct-09 17:14:17.314164 INFO [Blockchain] id:	<6c563e44c4078c23b006e30374d62dd22a0a48f8b107cee085312f20c5507a52>
+2018-Oct-09 17:14:17.314164 INFO [Blockchain] PoW:	<ad72c7c6cd30698f64d103d582474ab2d4e071068271795babde8edb77000000>
+2018-Oct-09 17:14:17.314164 INFO [Blockchain] difficulty:	28980257
+2018-Oct-09 17:37:08.539647 WARNING [node_server] [213.32.95.66:30158 OUT] Exception in connectionHandler: TcpConnection::read
+2018-Oct-09 17:37:27.311459 WARNING [node_server] [35.225.160.150:30158 OUT] Exception in connectionHandler: TcpConnection::read
+2018-Oct-09 17:37:37.689368 WARNING [node_server] [18.191.2.241:30158 OUT] Exception in connectionHandler: TcpConnection::read
+2018-Oct-09 17:37:44.692333 INFO [protocol] [35.225.160.150:30158 OUT] Sync data returned unknown top block: 57995 -> 57999 [4 blocks (0 days) behind] 
+2018-Oct-09 17:37:44.692333 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 17:37:44.994903 INFO [protocol] [35.225.160.150:30158 OUT] SYNCHRONIZED OK
+2018-Oct-09 17:37:54.051526 WARNING [node_server] [18.216.177.39:30158 OUT] Exception in connectionHandler: TcpConnection::read
+2018-Oct-09 17:37:54.740180 WARNING [node_server] [18.219.230.38:30158 OUT] Exception in connectionHandler: TcpConnection::read
+2018-Oct-09 17:37:57.950490 WARNING [node_server] [18.216.197.204:30158 OUT] Exception in connectionHandler: TcpConnection::read
+2018-Oct-09 17:38:09.661738 WARNING [node_server] [54.86.25.3:30158 OUT] Exception in connectionHandler: TcpConnection::read
+2018-Oct-09 17:38:37.666994 WARNING [node_server] [54.69.108.93:30158 OUT] Exception in connectionHandler: TcpConnection::read
+2018-Oct-09 17:39:00.720413 INFO [node_server] Stop signal sent
+2018-Oct-09 17:39:00.720524 INFO [node_server] Stopping NodeServer and it's7 connections...
+2018-Oct-09 17:39:01.721849 INFO [node_server] NodeServer loop stopped
+2018-Oct-09 17:39:01.721979 INFO [daemon] p2p net loop stopped
+2018-Oct-09 17:39:01.722046 INFO [daemon] Stopping core rpc server...
+2018-Oct-09 17:39:01.722125 INFO [daemon] Deinitializing core...
+2018-Oct-09 17:39:01.722183 INFO [miner] Mining has been stopped, 0 finished
+2018-Oct-09 17:39:01.722423 INFO [Blockchain] Saving blockchain...
+2018-Oct-09 17:39:01.724743 INFO [BlockCacheSerializer] - saving block index...
+2018-Oct-09 17:39:01.729083 INFO [BlockCacheSerializer] - saving transaction map...
+2018-Oct-09 17:39:01.739517 INFO [BlockCacheSerializer] - saving spent keys...
+2018-Oct-09 17:39:01.754511 INFO [BlockCacheSerializer] - saving outputs...
+2018-Oct-09 17:39:01.767788 INFO [BlockCacheSerializer] - saving multi-signature outputs...
+2018-Oct-09 17:39:01.767862 INFO [BlockCacheSerializer] Serialization time: 43ms
+2018-Oct-09 17:39:01.775710 INFO [Blockchain] Saving blockchain indices...
+2018-Oct-09 17:39:01.779167 INFO [BlockchainIndicesSerializer] - saving paymentID index...
+2018-Oct-09 17:39:01.779283 INFO [BlockchainIndicesSerializer] - saving timestamp index...
+2018-Oct-09 17:39:01.816184 INFO [BlockchainIndicesSerializer] - saving generated transactions index...
+2018-Oct-09 17:39:01.827507 INFO [daemon] Deinitializing p2p...
+2018-Oct-09 17:39:01.832692 INFO [miner] Mining has been stopped, 0 finished
+2018-Oct-09 17:39:01.860295 INFO [daemon] Node stopped.
+2018-Oct-09 18:31:13.672489 INFO [daemon] fedoragold v1.1.1.1()
+2018-Oct-09 18:31:13.672922 INFO [daemon] Module folder: ./fedoragold_daemon
+2018-Oct-09 18:31:13.673914 INFO [daemon] Initializing p2p server...
+2018-Oct-09 18:31:13.674446 INFO [node_server] Binding on 0.0.0.0:30158
+2018-Oct-09 18:31:13.674698 INFO [node_server] Net service binded on 0.0.0.0:30158
+2018-Oct-09 18:31:13.674943 INFO [node_server] Attempting to add IGD port mapping.
+2018-Oct-09 18:31:17.682451 INFO [node_server] No IGD was found.
+2018-Oct-09 18:31:17.682558 INFO [daemon] P2p server initialized OK
+2018-Oct-09 18:31:17.682594 INFO [daemon] Initializing core...
+2018-Oct-09 18:31:17.685354 INFO [Blockchain] Loading blockchain...
+2018-Oct-09 18:31:17.685853 INFO [BlockCacheSerializer] - loading block index...
+2018-Oct-09 18:31:17.701364 INFO [BlockCacheSerializer] - loading transaction map...
+2018-Oct-09 18:31:17.717999 INFO [BlockCacheSerializer] - loading spent keys...
+2018-Oct-09 18:31:17.771294 INFO [BlockCacheSerializer] - loading outputs...
+2018-Oct-09 18:31:17.809519 INFO [BlockCacheSerializer] - loading multi-signature outputs...
+2018-Oct-09 18:31:17.809833 INFO [BlockCacheSerializer] Serialization time: 123ms
+2018-Oct-09 18:31:17.810267 INFO [Blockchain] Loading blockchain indices for BlockchainExplorer...
+2018-Oct-09 18:31:17.810607 INFO [BlockchainIndicesSerializer] - loading paymentID index...
+2018-Oct-09 18:31:17.810841 INFO [BlockchainIndicesSerializer] - loading timestamp index...
+2018-Oct-09 18:31:17.831223 INFO [BlockchainIndicesSerializer] - loading generated transactions index...
+2018-Oct-09 18:31:17.843448 INFO [Blockchain] Blockchain initialized. last block: 57998, d0.h0.m53.s32 time ago, current difficulty: 38979131
+2018-Oct-09 18:31:17.843728 INFO [daemon] Core initialized OK
+2018-Oct-09 18:31:17.844242 INFO [daemon] Starting core rpc server on address 127.0.0.1:30159
+2018-Oct-09 18:31:17.844468 INFO [daemon] Core rpc server started ok
+2018-Oct-09 18:31:17.844711 INFO [daemon] Starting p2p net loop...
+2018-Oct-09 18:31:17.844960 INFO [node_server] Starting node_server
+2018-Oct-09 18:31:17.845261 INFO [node_server]   acceptLoop started...
+2018-Oct-09 18:31:17.845579 INFO [node_server]   onIdle started...
+2018-Oct-09 18:31:17.845829 INFO [node_server]   timedSyncLoop started...
+2018-Oct-09 18:31:17.846257 INFO [node_server]   timeoutLoop started...
+2018-Oct-09 18:31:18.092323 INFO [protocol] [35.225.160.150:30158 OUT] Sync data returned unknown top block: 57998 -> 58124 [126 blocks (0 days) behind] 
+2018-Oct-09 18:31:18.092323 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 18:31:18.381189 INFO [protocol] [34.235.55.80:30158 OUT] Sync data returned unknown top block: 57998 -> 58124 [126 blocks (0 days) behind] 
+2018-Oct-09 18:31:18.381189 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 18:31:18.631219 INFO [protocol] [54.86.25.3:30158 OUT] Sync data returned unknown top block: 57998 -> 58124 [126 blocks (0 days) behind] 
+2018-Oct-09 18:31:18.631219 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 18:31:18.992337 INFO [protocol] [18.223.178.174:30158 OUT] Sync data returned unknown top block: 58001 -> 58124 [123 blocks (0 days) behind] 
+2018-Oct-09 18:31:18.992337 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 18:31:19.582391 INFO [protocol] [18.219.230.38:30158 OUT] Sync data returned unknown top block: 58025 -> 58124 [99 blocks (0 days) behind] 
+2018-Oct-09 18:31:19.582391 INFO [protocol] SYNCHRONIZATION started
+2018-Oct-09 18:31:22.211401 INFO [protocol] [35.225.160.150:30158 OUT] SYNCHRONIZED OK
+2018-Oct-09 18:31:22.211479 INFO [protocol] 
+2018-Oct-09 18:31:22.211479 INFO [protocol] **********************************************************************
+2018-Oct-09 18:31:22.211479 INFO [protocol] You are now synchronized with the network. You may now start simplewallet.
+2018-Oct-09 18:31:22.211479 INFO [protocol] 
+2018-Oct-09 18:31:22.211479 INFO [protocol] Please note, that the blockchain will be saved only after you quit the daemon with "exit" command or if you use "save" command.
+2018-Oct-09 18:31:22.211479 INFO [protocol] Otherwise, you will possibly need to synchronize the blockchain again.
+2018-Oct-09 18:31:22.211479 INFO [protocol] 
+2018-Oct-09 18:31:22.211479 INFO [protocol] Use "help" command to see the list of available commands.
+2018-Oct-09 18:31:22.211479 INFO [protocol] **********************************************************************
+2018-Oct-09 18:31:31.355763 INFO [RpcServer] got the output indexes...
+2018-Oct-09 18:31:31.355922 INFO [RpcServer] got transaction hash:<e6ef1167b53b25e62e9c38f96e53662dcfc7944f4f2dc1fe82fe1a649861340c>
+2018-Oct-09 18:31:31.355979 INFO [RpcServer] blockID: <a2dfa0190cf07e42b47782c2c218cb9d90b6524f978775605f9caf5aca443d99>
+2018-Oct-09 18:31:31.356086 INFO [RpcServer] blockheight: 56481
+2018-Oct-09 18:31:31.356220 INFO [RpcServer] got tx prefix hash: <741651ffab89c305df44a7a7daa5f5392bb5a932fe311add08f9b1e2c5b4ceb4>
+2018-Oct-09 18:31:31.356276 INFO [RpcServer] No paymentID found for transaction
+2018-Oct-09 18:31:50.038746 INFO [core] 
+2018-Oct-09 18:31:50.038746 INFO [core] **********************************************************************
+2018-Oct-09 18:31:50.038746 INFO [core] The daemon will start synchronizing with the network. It may take up to several hours.
+2018-Oct-09 18:31:50.038746 INFO [core] 
+2018-Oct-09 18:31:50.038746 INFO [core] You can set the level of process detailization* through "set_log <level>" command*, where <level> is between 0 (no details) and 4 (very verbose).
+2018-Oct-09 18:31:50.038746 INFO [core] 
+2018-Oct-09 18:31:50.038746 INFO [core] Use "help" command to see the list of available commands.
+2018-Oct-09 18:31:50.038746 INFO [core] 
+2018-Oct-09 18:31:50.038746 INFO [core] Note: in case you need to interrupt the process, use "exit" command. Otherwise, the current progress won't be saved.
+2018-Oct-09 18:31:50.038746 INFO [core] **********************************************************************
