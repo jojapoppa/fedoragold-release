@@ -56,9 +56,9 @@ req.height
 res.transactionHashes
 res.status
 
-curl -X GET -i -H "Accept: application/json" -d '{"height":29287,"jsonrpc": "2.0"}' http://localhost:30159/getblock
+curl -X GET -i -H "Accept: application/json" -d '{"height":56481,"jsonrpc": "2.0"}' http://localhost:30159/getblock
 
-{"status":"OK","transactionHashes":[]}
+{"status":"OK","transactionHashes":["e6ef1167b53b25e62e9c38f96e53662dcfc7944f4f2dc1fe82fe1a649861340c"]}
 
 Get Currency ID (port 30159):
 getcurrencyid
@@ -122,7 +122,7 @@ res.inputamt
 res.outputamt
 res.status
 
-curl -X GET -i -H "Accept: application/json" -d '{"txhash": "6d1bcb9d472bd78ec8eb920ba1e46f514a8f635959d897b842910a5f1d5e78a9", "jsonrpc": "2.0"}' http://localhost:30159/gettransaction
+curl -X GET -i -H "Accept: application/json" -d '{"txhash": "e6ef1167b53b25e62e9c38f96e53662dcfc7944f4f2dc1fe82fe1a649861340c", "jsonrpc": "2.0"}' http://localhost:30159/gettransaction
 or...
 curl -X GET -i -H "Accept: application/json" -d '{"txhash": "0000000000000000000000000000000000000000000000000000000000000000", "blknum":29287,"txnum":0,"jsonrpc": "2.0"}'  http://localhost:30159/gettransaction
 
