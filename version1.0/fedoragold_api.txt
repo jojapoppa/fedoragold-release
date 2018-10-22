@@ -53,12 +53,14 @@ curl -X GET -i -H "Accept: application/json" -d '{"wallet_address": "NGkVYFneqws
 Get Block (port 30159):
 getblock
 req.height
+res.alreadyGeneratedCoins
+res.difficulty
 res.transactionHashes
 res.status
 
 curl -X GET -i -H "Accept: application/json" -d '{"height":56481,"jsonrpc": "2.0"}' http://localhost:30159/getblock
 
-{"status":"OK","transactionHashes":["e6ef1167b53b25e62e9c38f96e53662dcfc7944f4f2dc1fe82fe1a649861340c"]}
+{"alreadyGeneratedCoins":15242389372132975,"difficulty":20917380,"status":"OK","transactionHashes":["e6ef1167b53b25e62e9c38f96e53662dcfc7944f4f2dc1fe82fe1a649861340c"]}
 
 Get Currency ID (port 30159):
 getcurrencyid
