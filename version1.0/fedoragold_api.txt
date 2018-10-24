@@ -54,13 +54,16 @@ Get Block (port 30159):
 getblock
 req.height
 res.alreadyGeneratedCoins
+res.blocksize
 res.difficulty
+res.currentmediansize
+res.hash
 res.transactionHashes
 res.status
 
 curl -X GET -i -H "Accept: application/json" -d '{"height":56481,"jsonrpc": "2.0"}' http://localhost:30159/getblock
 
-{"alreadyGeneratedCoins":16294240264358492,"blocksize":5585,"difficulty":15926468,"hash":"a2dfa0190cf07e42b47782c2c218cb9d90b6524f978775605f9caf5aca443d99","status":"OK","transactionHashes":["e6ef1167b53b25e62e9c38f96e53662dcfc7944f4f2dc1fe82fe1a649861340c"]}
+{"alreadyGeneratedCoins":16316704329387360,"blocksize":5585,"currentmediansize":100000,"difficulty":19852252,"hash":"a2dfa0190cf07e42b47782c2c218cb9d90b6524f978775605f9caf5aca443d99","status":"OK","transactionHashes":["e6ef1167b53b25e62e9c38f96e53662dcfc7944f4f2dc1fe82fe1a649861340c"]}
 
 Get Currency ID (port 30159):
 getcurrencyid
