@@ -132,6 +132,7 @@ res.blockheight
 res.paymentid
 res.prefix
 res.version
+res.fee
 res.unlocktime
 res.inputamt
 res.outputamt
