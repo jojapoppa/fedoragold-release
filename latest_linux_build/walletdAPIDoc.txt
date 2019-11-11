@@ -4,9 +4,23 @@ All fedoragold_walletd calls are JSON and are shown below
 Note: FED has 8 decimal places
 Note: All fedoragold_walletd calls are POST (not GET like fedorgold daemon)
 
-Example POST (walletd): curl -d '{"jsonrpc":"2.0","id":1,"method":"getTransactionHashes","params":{"addresses":["NJrpNXUhLVyQD7cjmQGu5JiZWR1md5z11SLtyZ3wyRgLFfwS8vXv1iRDK4KqiEYUnmTPL857XENijCh3nbXdhXheJYhZu2Q"],"firstBlockIndex":460921,"blockCount":10}}' http://localhost:31876/json_rpc
+Example: walletd getBalance
+curl -X POST -i -H "Accept: application/json" -d '{"params": {"address": "NJkTBid4ZXSPVd6pVSRhRvPN6Qsa32Gbfe1uRLbCxnMQemVh1787L2r9B2Q3FjSpbbbhChRbdfJAH777Q4Sqi1V4M89d8X8"}, "jsonrpc": "2.0", "id": "test", "method":"getBalance"}' http://localhost:9090/json_rpc
 
-Example GET (daemon height): curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getheight  
+Example: walletd getAddresses
+curl -X POST -i -H "Accept: application/json" -d '{"params": {}, "jsonrpc": "2.0", "id": "test", "method":"getAddresses"}' http://localhost:9090/json_rpc
+
+Example: walletd getTransactions by block
+curl -X POST -i -H "Accept: application/json" -d '{"params": {"firstBlockIndex": 1331400, "blockCount": 1}, "jsonrpc": "2.0", "id": "test", "method":"getTransactions"}' http://localhost:9090/json_rpc
+
+Example: walletd getTransactionHashes by address
+curl -X POST -i -H "Accept: application/json" -d '{"params": {"firstBlockIndex": 1331400, "blockCount": 1, "addresses": ["NJkTBid4ZXSPVd6pVSRhRvPN6Qsa32Gbfe1uRLbCxnMQemVh1787L2r9B2Q3FjSpbbbhChRbdfJAH777Q4Sqi1V4M89d8X8"]}, "jsonrpc": "2.0", "id": "test", "method":"getTransactionHashes"}' http://localhost:9090/json_rpc
+
+Example: walletd getTransactions by hash
+curl -X POST -i -H "Accept: application/json" -d '{"params": {"blockHash": "b3bc90d04ca017fcaf5ee2c8efda95b1ac450beca30a9985e2a9f302f0afed22", "blockCount": 1, "addresses": ["NJkTBid4ZXSPVd6pVSRhRvPN6Qsa32Gbfe1uRLbCxnMQemVh1787L2r9B2Q3FjSpbbbhChRbdfJAH777Q4Sqi1V4M89d8X8"]}, "jsonrpc": "2.0", "id": "test", "method":"getTransactions"}' http://localhost:9090/json_rpc
+
+Example GET (daemon height): getheight
+curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getheight  
 
 All Walletd JSON RPC Calls Are Described Below:
 
@@ -51,7 +65,7 @@ getTransactionHashes
     request.addresses
     request.blockHash
     request.blockCount
-    request.paymentId
+    request.paymentId (optional)
     response.items (list of hashes)
       blockHash
       transactionHashes
@@ -60,7 +74,7 @@ getTransactionHashes
     request.blockHash
     request.firstBlockIndex
     request.blockCount
-    request.paymentId
+    request.paymentId (optional)
     response.items (list of hashes)
       blockHash
       transactionHashes
@@ -70,7 +84,7 @@ getTransactions
     request.addresses
     request.blockHash
     request.blockCount
-    request.paymentId
+    request.paymentId (optional)
     response.items (list of hashes)
       blockHash
       transactions
@@ -87,12 +101,12 @@ getTransactions
           address
           amount 
         extra
-        paymentId
+        paymentId 
   or
     request.addresses
     request.firstBlockIndex
     request.blockCount
-    request.paymentId
+    request.paymentId (optional)
     response.items (list of hashes)
       blockHash
       transactions
@@ -109,7 +123,7 @@ getTransactions
           address
           amount 
         extra
-        paymentId
+        paymentId 
 
 getUnconfirmedTransactionHashes
  function: handleGetUnconfirmedTransactionHashes
@@ -146,7 +160,7 @@ sendTransaction
     fee
     anonymity (same as mixin)
     extra
-    paymentId
+    paymentId (optional)
     unlockTime (measured in blocks)
   response.transactionHash
 
@@ -161,7 +175,7 @@ createDelayedTransaction
     fee
     anonymity (same as mixin)
     extra
-    paymentId
+    paymentId (optional)
     unlockTime (measured in blocks)
   response.transactionHash
 
