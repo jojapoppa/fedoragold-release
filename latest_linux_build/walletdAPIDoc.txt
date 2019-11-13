@@ -4,6 +4,9 @@ All fedoragold_walletd calls are JSON and are shown below
 Note: FED has 8 decimal places
 Note: All fedoragold_walletd calls are POST (not GET like fedorgold daemon)
 
+Example: walletd getStatus
+curl -X POST -i -H "Accept: application/json" -d '{"jsonrpc": "2.0", "id": "test", "method":"getStatus"}' http://localhost:9090/json_rpc
+
 Example: walletd getBalance
 curl -X POST -i -H "Accept: application/json" -d '{"params": {"address": "NJkTBid4ZXSPVd6pVSRhRvPN6Qsa32Gbfe1uRLbCxnMQemVh1787L2r9B2Q3FjSpbbbhChRbdfJAH777Q4Sqi1V4M89d8X8"}, "jsonrpc": "2.0", "id": "test", "method":"getBalance"}' http://localhost:9090/json_rpc
 
