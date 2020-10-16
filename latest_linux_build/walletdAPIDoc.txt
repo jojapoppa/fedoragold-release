@@ -22,7 +22,7 @@ curl -X POST -i -H "Accept: application/json" -d '{"params": {"firstBlockIndex":
 Example: walletd getTransactions by hash
 curl -X POST -i -H "Accept: application/json" -d '{"params": {"blockHash": "b3bc90d04ca017fcaf5ee2c8efda95b1ac450beca30a9985e2a9f302f0afed22", "blockCount": 1, "addresses": ["NJkTBid4ZXSPVd6pVSRhRvPN6Qsa32Gbfe1uRLbCxnMQemVh1787L2r9B2Q3FjSpbbbhChRbdfJAH777Q4Sqi1V4M89d8X8"]}, "jsonrpc": "2.0", "id": "test", "method":"getTransactions"}' http://localhost:9090/json_rpc
 
-Example GET (daemon height): getheight
+Example GET (daemon height): getheight (just example of daemon call - below are docs for walletd)
 curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getheight  
 
 All Walletd JSON RPC Calls Are Described Below:
