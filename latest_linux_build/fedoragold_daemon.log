@@ -1,0 +1,397 @@
+2020-Aug-22 13:42:40.702645 INFO [daemon] fedoragold v2.0.2.1()
+2020-Aug-22 13:42:40.702841 INFO [daemon] Module folder: ./fedoragold_daemon
+2020-Aug-22 13:42:40.703685 INFO [daemon] Initializing p2p server...
+2020-Aug-22 13:42:40.705339 INFO [node_server] Binding on 0.0.0.0:30158
+2020-Aug-22 13:42:40.705484 INFO [node_server] Net service binded on 0.0.0.0:30158
+2020-Aug-22 13:42:40.705602 INFO [node_server] Attempting to add IGD port mapping.
+2020-Aug-22 13:42:44.712411 INFO [node_server] No IGD was found.
+2020-Aug-22 13:42:44.712502 INFO [daemon] P2p server initialized OK
+2020-Aug-22 13:42:44.712544 INFO [daemon] Initializing core...
+2020-Aug-22 13:42:44.712568 INFO [core] Initialize memory pool...
+2020-Aug-22 13:42:44.719174 INFO [core] Initialize block chain...
+2020-Aug-22 13:42:44.822748 INFO [Blockchain] Loading blockchain...
+2020-Aug-22 13:42:44.823998 INFO [BlockCacheSerializer] calling serialize for block cache load...
+2020-Aug-22 13:42:44.825053 INFO [BlockCacheSerializer] - loading block index...
+2020-Aug-22 13:42:46.335411 INFO [BlockCacheSerializer] - loading transaction map...
+2020-Aug-22 13:42:47.782278 INFO [BlockCacheSerializer] - loading spent keys...
+2020-Aug-22 13:43:00.361274 INFO [BlockCacheSerializer] - loading outputs...
+2020-Aug-22 13:43:05.544970 INFO [BlockCacheSerializer] - loading multi-signature outputs...
+2020-Aug-22 13:43:05.545080 INFO [BlockCacheSerializer] Serialization time: 20721ms
+2020-Aug-22 13:43:05.545123 INFO [Blockchain] Loading blockchain indices for BlockchainExplorer...
+2020-Aug-22 13:43:05.545710 INFO [BlockchainIndicesSerializer] - loading paymentID index...
+2020-Aug-22 13:43:05.546718 INFO [BlockchainIndicesSerializer] - loading timestamp index...
+2020-Aug-22 13:43:05.575651 INFO [BlockchainIndicesSerializer] - loading generated transactions index...
+2020-Aug-22 13:43:05.575760 WARNING [Blockchain] Checking blocks...
+2020-Aug-22 13:43:05.576397 INFO [Blockchain] checking genesis block
+2020-Aug-22 13:43:05.576467 INFO [Blockchain] verifying checkpoints...
+2020-Aug-22 13:43:05.576505 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1192156 <d4d514f0ebeecd9f0847f4357a3baaa133a73fd27a4837759d939d4f152197a0>
+2020-Aug-22 13:43:05.576547 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1192782 <728766de7334a5151e3d9f1cf3677e5284403b53d72a1b4f8d892580123578a6>
+2020-Aug-22 13:43:05.576581 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1192783 <33c8862c59fc65e1dea0e5e708437e2ae2284bca387e52cd627431d7ab00cf6b>
+2020-Aug-22 13:43:05.576616 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1192784 <e53958acc1414a66f187f45532126a4db4cf1dbc67c5066493d8f561034d2b2f>
+2020-Aug-22 13:43:05.576648 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1192785 <28ab24d976431e5cdedc33dbe612034688b43ba3fdcf9522cdaf4f09c2d44fa6>
+2020-Aug-22 13:43:05.576742 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1386085 <6d7be65f3d02a1c38782284b82d09be4a613ab7c216a1fc41f8767a3c7948ee8>
+2020-Aug-22 13:43:05.576781 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1391474 <1caab6ce6a4e52c09ae84da074359702ffae362acbda03a09d875d563e421a0e>
+2020-Aug-22 13:43:05.576817 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1391475 <ba660437996fdc103f9bb630536bb3d8b1689916f8370cac315eec95b4a1410d>
+2020-Aug-22 13:43:05.576849 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1410011 <4b42ebeff2876543858a9528244ba5bec4521572b7f6c692576e6814850a8e26>
+2020-Aug-22 13:43:05.576884 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1410477 <fcd10d86ece5633869e25c6e54d7525602d17f0c43c322ba44c89d7f440ce44a>
+2020-Aug-22 13:43:05.576919 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1410478 <94e49a37962f12b88d54de76a035254ef82e1a952e982569ea418c4f8b4539d6>
+2020-Aug-22 13:43:05.576954 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1412056 <16743416f33f6b923e268b693a89533860d2f80bdb30835bb5b34a401c14e9ef>
+2020-Aug-22 13:43:05.576990 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1414791 <e8b934217d40120d6ee47167fd39febf3c7286121c53cf4edf8ff7bb371b8522>
+2020-Aug-22 13:43:05.577022 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1415284 <ea812d907def2f7d41eba3ccab2851b58c924d703f485a3a4cfc0822b0bb12ce>
+2020-Aug-22 13:43:05.577070 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1418082 <db1a346269efcb3a2aff3e6a4aeb2c79a91abc33d85207d577c02b177b5156da>
+2020-Aug-22 13:43:05.577102 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1461743 <723955cf87a939652b03f4d66a1c1fe9f7cafb2e43fb3ac200b0a48787189f50>
+2020-Aug-22 13:43:05.577207 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1483325 <9cffd18845f94b7fd8a7a067732473e807c9a4abedbd952f72188a2bd6668639>
+2020-Aug-22 13:43:05.577325 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1561192 <c42dfb93904f41b411e3f003c6c0ec87fdae33a39496f8ab92d2e5e211554477>
+2020-Aug-22 13:43:05.577389 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1561193 <982d2347a78b5f6304cc1e4691dfdfb5f9aafd94d261ff732a617edb80526c86>
+2020-Aug-22 13:43:05.577426 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1600182 <855343c2f5071a4247999233a6572db4d9754f9ffad403f6e1bc0de706f8df50>
+2020-Aug-22 13:43:05.577462 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 1624996 <e814ac64a10eae90e18b6c5da3a10c75bd51c12cd1973e01b49df17b93cb76a7>
+2020-Aug-22 13:43:05.577498 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 2140644 <5c264156e9df8648d0e1313be71647ee55afe9d5ebd530dc1146dbcf469b76c6>
+2020-Aug-22 13:43:05.577533 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 2140645 <41588dca905c858454f79b44e58f773bfe66eafff66c42c67fc211fbd84b94ec>
+2020-Aug-22 13:43:05.577569 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 2163935 <a924ca448707a025d428777778e130adf8dc9a9d3a018717ced6c98bab096b73>
+2020-Aug-22 13:43:05.577603 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 2163936 <251e476e86b66a45623606ae5c690ace50d07dc4356be22add25cd8e9528d0bf>
+2020-Aug-22 13:43:05.577638 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 2164043 <9b041e44b6a8b78eecb2ef24fc47e5ccfed63333fe6b98bb6ec298a241240686>
+2020-Aug-22 13:43:05.577673 INFO [checkpoints] CHECKPOINT PASSED FOR HEIGHT 2164045 <bc181ea1429c8d5e50ca253fed2bf42aaea1c152c271a17a68a3435048685a0c>
+2020-Aug-22 13:43:05.577730 INFO [Blockchain] size limit update...
+2020-Aug-22 13:43:05.583090 INFO [Blockchain] Initialized, block: 2271970,  cur diff: 48813468
+2020-Aug-22 13:43:05.583177 INFO [core] Miner state init...
+2020-Aug-22 13:43:05.583215 INFO [daemon] Core initialized OK
+2020-Aug-22 13:43:05.583328 INFO [daemon] Core on address 127.0.0.1:30159
+2020-Aug-22 13:43:05.583415 INFO [daemon] Core rpc server started ok
+2020-Aug-22 13:43:05.583461 INFO [daemon] Starting p2p net loop...
+2020-Aug-22 13:43:05.583498 INFO [node_server] Starting node_server
+2020-Aug-22 13:43:05.583535 INFO [node_server]   acceptLoop started...
+2020-Aug-22 13:43:05.583572 INFO [node_server]   onIdle started...
+2020-Aug-22 13:43:05.583604 INFO [node_server]   timedSyncLoop started...
+2020-Aug-22 13:43:05.583641 INFO [node_server]   timeoutLoop started...
+2020-Aug-22 13:43:05.813650 INFO [protocol] [18.222.96.134:30158 OUT] Sync data returned unknown top block: 2271970 -> 2272257 [287 blocks (that block was created 0 days) behind] 
+2020-Aug-22 13:43:05.813650 INFO [protocol] SYNCHRONIZATION processing...
+2020-Aug-22 13:43:06.311936 INFO [protocol] [213.136.89.252:30158 OUT] Sync data returned unknown top block: 2271970 -> 2272257 [287 blocks (that block was created 0 days) behind] 
+2020-Aug-22 13:43:06.311936 INFO [protocol] SYNCHRONIZATION processing...
+2020-Aug-22 13:43:06.987580 INFO [Blockchain] Block: 2271972
+2020-Aug-22 13:43:07.125327 INFO [Blockchain] Block: 2271973
+2020-Aug-22 13:43:07.180246 INFO [Blockchain] Block: 2271974
+2020-Aug-22 13:43:07.215013 INFO [Blockchain] Block: 2271975
+2020-Aug-22 13:43:07.243129 INFO [Blockchain] Block: 2271976
+2020-Aug-22 13:43:07.484566 INFO [Blockchain] Block: 2271977
+2020-Aug-22 13:43:07.527651 INFO [Blockchain] Block: 2271978
+2020-Aug-22 13:43:07.565012 INFO [Blockchain] Block: 2271979
+2020-Aug-22 13:43:07.661728 INFO [Blockchain] Block: 2271980
+2020-Aug-22 13:43:07.697839 INFO [Blockchain] Block: 2271981
+2020-Aug-22 13:43:08.009454 INFO [Blockchain] Block: 2271982
+2020-Aug-22 13:43:08.058762 INFO [Blockchain] Block: 2271983
+2020-Aug-22 13:43:08.125722 INFO [Blockchain] Block: 2271984
+2020-Aug-22 13:43:08.169234 INFO [Blockchain] Block: 2271985
+2020-Aug-22 13:43:08.218718 INFO [Blockchain] Block: 2271986
+2020-Aug-22 13:43:08.286169 INFO [Blockchain] Block: 2271987
+2020-Aug-22 13:43:08.323756 INFO [Blockchain] Block: 2271988
+2020-Aug-22 13:43:08.356114 INFO [Blockchain] Block: 2271989
+2020-Aug-22 13:43:08.408019 INFO [Blockchain] Block: 2271990
+2020-Aug-22 13:43:08.461381 INFO [Blockchain] Block: 2271991
+2020-Aug-22 13:43:08.807160 INFO [Blockchain] Block: 2271992
+2020-Aug-22 13:43:08.840286 INFO [Blockchain] Block: 2271993
+2020-Aug-22 13:43:08.896162 INFO [Blockchain] Block: 2271994
+2020-Aug-22 13:43:08.934109 INFO [Blockchain] Block: 2271995
+2020-Aug-22 13:43:09.296756 INFO [Blockchain] Block: 2271996
+2020-Aug-22 13:43:09.336822 INFO [Blockchain] Block: 2271997
+2020-Aug-22 13:43:09.385712 INFO [Blockchain] Block: 2271998
+2020-Aug-22 13:43:09.525073 INFO [Blockchain] Block: 2271999
+2020-Aug-22 13:43:09.580824 INFO [Blockchain] Block: 2272000
+2020-Aug-22 13:43:09.700637 INFO [Blockchain] Block: 2272001
+2020-Aug-22 13:43:09.760173 INFO [Blockchain] Block: 2272002
+2020-Aug-22 13:43:09.806729 INFO [Blockchain] Block: 2272003
+2020-Aug-22 13:43:09.863809 INFO [Blockchain] Block: 2272004
+2020-Aug-22 13:43:10.443531 INFO [Blockchain] Block: 2272005
+2020-Aug-22 13:43:10.501757 INFO [Blockchain] Block: 2272006
+2020-Aug-22 13:43:10.553188 INFO [Blockchain] Block: 2272007
+2020-Aug-22 13:43:10.596328 INFO [Blockchain] Block: 2272008
+2020-Aug-22 13:43:10.644555 INFO [Blockchain] Block: 2272009
+2020-Aug-22 13:43:10.691266 INFO [Blockchain] Block: 2272010
+2020-Aug-22 13:43:10.862462 INFO [Blockchain] Block: 2272011
+2020-Aug-22 13:43:10.921620 INFO [Blockchain] Block: 2272012
+2020-Aug-22 13:43:10.966295 INFO [Blockchain] Block: 2272013
+2020-Aug-22 13:43:11.019702 INFO [Blockchain] Block: 2272014
+2020-Aug-22 13:43:11.140139 INFO [Blockchain] Block: 2272015
+2020-Aug-22 13:43:11.242086 INFO [Blockchain] Block: 2272016
+2020-Aug-22 13:43:11.279087 INFO [Blockchain] Block: 2272017
+2020-Aug-22 13:43:11.321372 INFO [Blockchain] Block: 2272018
+2020-Aug-22 13:43:11.357992 INFO [Blockchain] Block: 2272019
+2020-Aug-22 13:43:11.411226 INFO [Blockchain] Block: 2272020
+2020-Aug-22 13:43:11.447316 INFO [Blockchain] Block: 2272021
+2020-Aug-22 13:43:11.738663 INFO [Blockchain] Block: 2272022
+2020-Aug-22 13:43:11.801152 INFO [Blockchain] Block: 2272023
+2020-Aug-22 13:43:11.842882 INFO [Blockchain] Block: 2272024
+2020-Aug-22 13:43:11.892663 INFO [Blockchain] Block: 2272025
+2020-Aug-22 13:43:11.929715 INFO [Blockchain] Block: 2272026
+2020-Aug-22 13:43:12.037040 INFO [Blockchain] Block: 2272027
+2020-Aug-22 13:43:12.245309 INFO [Blockchain] Block: 2272028
+2020-Aug-22 13:43:12.505843 INFO [Blockchain] Block: 2272029
+2020-Aug-22 13:43:12.556542 INFO [Blockchain] Block: 2272030
+2020-Aug-22 13:43:12.594206 INFO [Blockchain] Block: 2272031
+2020-Aug-22 13:43:12.636033 INFO [Blockchain] Block: 2272032
+2020-Aug-22 13:43:12.713906 INFO [Blockchain] Block: 2272033
+2020-Aug-22 13:43:12.783812 INFO [Blockchain] Block: 2272034
+2020-Aug-22 13:43:12.834126 INFO [Blockchain] Block: 2272035
+2020-Aug-22 13:43:12.902174 INFO [Blockchain] Block: 2272036
+2020-Aug-22 13:43:12.973168 INFO [Blockchain] Block: 2272037
+2020-Aug-22 13:43:13.044277 INFO [Blockchain] Block: 2272038
+2020-Aug-22 13:43:13.385934 INFO [Blockchain] Block: 2272039
+2020-Aug-22 13:43:13.431459 INFO [Blockchain] Block: 2272040
+2020-Aug-22 13:43:13.480908 INFO [Blockchain] Block: 2272041
+2020-Aug-22 13:43:13.549717 INFO [Blockchain] Block: 2272042
+2020-Aug-22 13:43:13.602233 INFO [Blockchain] Block: 2272043
+2020-Aug-22 13:43:13.663911 INFO [Blockchain] Block: 2272044
+2020-Aug-22 13:43:13.724757 INFO [Blockchain] Block: 2272045
+2020-Aug-22 13:43:14.000630 INFO [Blockchain] Block: 2272046
+2020-Aug-22 13:43:16.985822 INFO [protocol] [116.203.231.252:20266 OUT] Sync data returned unknown top block: 2272045 -> 2272258 [213 blocks (that block was created 0 days) behind] 
+2020-Aug-22 13:43:16.985822 INFO [protocol] SYNCHRONIZATION processing...
+2020-Aug-22 13:43:18.067675 INFO [Blockchain] Block: 2272047
+2020-Aug-22 13:43:18.121459 INFO [Blockchain] Block: 2272048
+2020-Aug-22 13:43:18.177974 INFO [Blockchain] Block: 2272049
+2020-Aug-22 13:43:18.755379 INFO [Blockchain] Block: 2272050
+2020-Aug-22 13:43:18.806346 INFO [Blockchain] Block: 2272051
+2020-Aug-22 13:43:18.852242 INFO [Blockchain] Block: 2272052
+2020-Aug-22 13:43:18.903398 INFO [Blockchain] Block: 2272053
+2020-Aug-22 13:43:18.954727 INFO [Blockchain] Block: 2272054
+2020-Aug-22 13:43:18.993180 INFO [Blockchain] Block: 2272055
+2020-Aug-22 13:43:19.036132 INFO [Blockchain] Block: 2272056
+2020-Aug-22 13:43:19.082609 INFO [Blockchain] Block: 2272057
+2020-Aug-22 13:43:19.141708 INFO [Blockchain] Block: 2272058
+2020-Aug-22 13:43:19.179337 INFO [Blockchain] Block: 2272059
+2020-Aug-22 13:43:19.235050 INFO [Blockchain] Block: 2272060
+2020-Aug-22 13:43:19.272260 INFO [Blockchain] Block: 2272061
+2020-Aug-22 13:43:19.358558 INFO [Blockchain] Block: 2272062
+2020-Aug-22 13:43:19.391750 INFO [Blockchain] Block: 2272063
+2020-Aug-22 13:43:19.510022 INFO [Blockchain] Block: 2272064
+2020-Aug-22 13:43:19.552473 INFO [Blockchain] Block: 2272065
+2020-Aug-22 13:43:19.603285 INFO [Blockchain] Block: 2272066
+2020-Aug-22 13:43:19.628572 INFO [Blockchain] Block: 2272067
+2020-Aug-22 13:43:19.834406 INFO [Blockchain] Block: 2272068
+2020-Aug-22 13:43:19.928333 INFO [Blockchain] Block: 2272069
+2020-Aug-22 13:43:20.037438 INFO [Blockchain] Block: 2272070
+2020-Aug-22 13:43:20.082691 INFO [Blockchain] Block: 2272071
+2020-Aug-22 13:43:20.183403 INFO [Blockchain] Block: 2272072
+2020-Aug-22 13:43:20.230227 INFO [Blockchain] Block: 2272073
+2020-Aug-22 13:43:20.276523 INFO [Blockchain] Block: 2272074
+2020-Aug-22 13:43:20.329234 INFO [Blockchain] Block: 2272075
+2020-Aug-22 13:43:20.365438 INFO [Blockchain] Block: 2272076
+2020-Aug-22 13:43:20.407913 INFO [Blockchain] Block: 2272077
+2020-Aug-22 13:43:20.510756 INFO [Blockchain] Block: 2272078
+2020-Aug-22 13:43:20.545531 INFO [Blockchain] Block: 2272079
+2020-Aug-22 13:43:20.783981 INFO [Blockchain] Block: 2272080
+2020-Aug-22 13:43:20.850340 INFO [Blockchain] Block: 2272081
+2020-Aug-22 13:43:20.884070 INFO [Blockchain] Block: 2272082
+2020-Aug-22 13:43:20.932079 INFO [Blockchain] Block: 2272083
+2020-Aug-22 13:43:20.972790 INFO [Blockchain] Block: 2272084
+2020-Aug-22 13:43:21.072924 INFO [Blockchain] Block: 2272085
+2020-Aug-22 13:43:21.115086 INFO [Blockchain] Block: 2272086
+2020-Aug-22 13:43:21.162128 INFO [Blockchain] Block: 2272087
+2020-Aug-22 13:43:21.206484 INFO [Blockchain] Block: 2272088
+2020-Aug-22 13:43:21.336874 INFO [Blockchain] Block: 2272089
+2020-Aug-22 13:43:21.469424 INFO [Blockchain] Block: 2272090
+2020-Aug-22 13:43:21.550182 INFO [Blockchain] Block: 2272091
+2020-Aug-22 13:43:21.624293 INFO [Blockchain] Block: 2272092
+2020-Aug-22 13:43:21.959032 INFO [Blockchain] Block: 2272093
+2020-Aug-22 13:43:22.011672 INFO [Blockchain] Block: 2272094
+2020-Aug-22 13:43:22.052615 INFO [Blockchain] Block: 2272095
+2020-Aug-22 13:43:22.106859 INFO [Blockchain] Block: 2272096
+2020-Aug-22 13:43:22.157479 INFO [Blockchain] Block: 2272097
+2020-Aug-22 13:43:22.207962 INFO [Blockchain] Block: 2272098
+2020-Aug-22 13:43:22.372876 INFO [Blockchain] Block: 2272099
+2020-Aug-22 13:43:22.419349 INFO [Blockchain] Block: 2272100
+2020-Aug-22 13:43:22.465161 INFO [Blockchain] Block: 2272101
+2020-Aug-22 13:43:22.500846 INFO [Blockchain] Block: 2272102
+2020-Aug-22 13:43:22.539094 INFO [Blockchain] Block: 2272103
+2020-Aug-22 13:43:22.586278 INFO [Blockchain] Block: 2272104
+2020-Aug-22 13:43:22.622859 INFO [Blockchain] Block: 2272105
+2020-Aug-22 13:43:22.672065 INFO [Blockchain] Block: 2272106
+2020-Aug-22 13:43:22.712662 INFO [Blockchain] Block: 2272107
+2020-Aug-22 13:43:22.911446 INFO [Blockchain] Block: 2272108
+2020-Aug-22 13:43:22.962105 INFO [Blockchain] Block: 2272109
+2020-Aug-22 13:43:23.031251 INFO [Blockchain] Block: 2272110
+2020-Aug-22 13:43:23.093920 INFO [Blockchain] Block: 2272111
+2020-Aug-22 13:43:23.164183 INFO [Blockchain] Block: 2272112
+2020-Aug-22 13:43:23.558572 INFO [Blockchain] Block: 2272113
+2020-Aug-22 13:43:23.639750 INFO [Blockchain] Block: 2272114
+2020-Aug-22 13:43:23.699664 INFO [Blockchain] Block: 2272115
+2020-Aug-22 13:43:23.766784 INFO [Blockchain] Block: 2272116
+2020-Aug-22 13:43:23.828322 INFO [Blockchain] Block: 2272117
+2020-Aug-22 13:43:23.962903 INFO [Blockchain] Block: 2272118
+2020-Aug-22 13:43:24.450829 INFO [Blockchain] Block: 2272119
+2020-Aug-22 13:43:24.514790 INFO [Blockchain] Block: 2272120
+2020-Aug-22 13:43:24.582491 INFO [Blockchain] Block: 2272121
+2020-Aug-22 13:43:25.330927 INFO [Blockchain] Block: 2272122
+2020-Aug-22 13:43:25.398563 INFO [Blockchain] Block: 2272123
+2020-Aug-22 13:43:25.516022 INFO [Blockchain] Block: 2272124
+2020-Aug-22 13:43:25.734646 INFO [Blockchain] Block: 2272125
+2020-Aug-22 13:43:25.811788 INFO [Blockchain] Block: 2272126
+2020-Aug-22 13:43:25.967851 INFO [Blockchain] Block: 2272127
+2020-Aug-22 13:43:26.042906 INFO [Blockchain] Block: 2272128
+2020-Aug-22 13:43:26.305323 INFO [Blockchain] Block: 2272129
+2020-Aug-22 13:43:26.368397 INFO [Blockchain] Block: 2272130
+2020-Aug-22 13:43:26.463859 INFO [Blockchain] Block: 2272131
+2020-Aug-22 13:43:26.554872 INFO [Blockchain] Block: 2272132
+2020-Aug-22 13:43:26.639609 INFO [Blockchain] Block: 2272133
+2020-Aug-22 13:43:26.862922 INFO [Blockchain] Block: 2272134
+2020-Aug-22 13:43:27.007950 INFO [Blockchain] Block: 2272135
+2020-Aug-22 13:43:27.130316 INFO [Blockchain] Block: 2272136
+2020-Aug-22 13:43:27.446638 INFO [Blockchain] Block: 2272137
+2020-Aug-22 13:43:27.531536 INFO [Blockchain] Block: 2272138
+2020-Aug-22 13:43:27.858688 INFO [Blockchain] Block: 2272139
+2020-Aug-22 13:43:27.968207 INFO [Blockchain] Block: 2272140
+2020-Aug-22 13:43:28.057151 INFO [Blockchain] Block: 2272141
+2020-Aug-22 13:43:28.176944 INFO [Blockchain] Block: 2272142
+2020-Aug-22 13:43:28.244441 INFO [Blockchain] Block: 2272143
+2020-Aug-22 13:43:28.304127 INFO [Blockchain] Block: 2272144
+2020-Aug-22 13:43:28.469079 INFO [Blockchain] Block: 2272145
+2020-Aug-22 13:43:28.525579 INFO [Blockchain] Block: 2272146
+2020-Aug-22 13:43:28.656941 INFO [Blockchain] Block: 2272147
+2020-Aug-22 13:43:28.708043 INFO [Blockchain] Block: 2272148
+2020-Aug-22 13:43:28.851158 INFO [Blockchain] Block: 2272149
+2020-Aug-22 13:43:29.372961 INFO [Blockchain] Block: 2272150
+2020-Aug-22 13:43:29.468943 INFO [Blockchain] Block: 2272151
+2020-Aug-22 13:43:29.540195 INFO [Blockchain] Block: 2272152
+2020-Aug-22 13:43:29.594306 INFO [Blockchain] Block: 2272153
+2020-Aug-22 13:43:29.658804 INFO [Blockchain] Block: 2272154
+2020-Aug-22 13:43:29.708226 INFO [Blockchain] Block: 2272155
+2020-Aug-22 13:43:29.921284 INFO [Blockchain] Block: 2272156
+2020-Aug-22 13:43:29.961120 INFO [Blockchain] Block: 2272157
+2020-Aug-22 13:43:30.014648 INFO [Blockchain] Block: 2272158
+2020-Aug-22 13:43:30.068184 INFO [Blockchain] Block: 2272159
+2020-Aug-22 13:43:30.158945 INFO [Blockchain] Block: 2272160
+2020-Aug-22 13:43:30.378078 INFO [Blockchain] Block: 2272161
+2020-Aug-22 13:43:30.434882 INFO [Blockchain] Block: 2272162
+2020-Aug-22 13:43:30.482334 INFO [Blockchain] Block: 2272163
+2020-Aug-22 13:43:30.575277 INFO [Blockchain] Block: 2272164
+2020-Aug-22 13:43:30.631060 INFO [Blockchain] Block: 2272165
+2020-Aug-22 13:43:30.673964 INFO [Blockchain] Block: 2272166
+2020-Aug-22 13:43:30.733540 INFO [Blockchain] Block: 2272167
+2020-Aug-22 13:43:30.774552 INFO [Blockchain] Block: 2272168
+2020-Aug-22 13:43:31.011448 INFO [Blockchain] Block: 2272169
+2020-Aug-22 13:43:31.071455 INFO [Blockchain] Block: 2272170
+2020-Aug-22 13:43:31.173034 INFO [Blockchain] Block: 2272171
+2020-Aug-22 13:43:31.296449 INFO [Blockchain] Block: 2272172
+2020-Aug-22 13:43:31.364181 INFO [Blockchain] Block: 2272173
+2020-Aug-22 13:43:31.424495 INFO [Blockchain] Block: 2272174
+2020-Aug-22 13:43:31.635583 INFO [Blockchain] Block: 2272175
+2020-Aug-22 13:43:31.698878 INFO [Blockchain] Block: 2272176
+2020-Aug-22 13:43:31.740898 INFO [Blockchain] Block: 2272177
+2020-Aug-22 13:43:31.809199 INFO [Blockchain] Block: 2272178
+2020-Aug-22 13:43:31.928841 INFO [Blockchain] Block: 2272179
+2020-Aug-22 13:43:32.136034 INFO [Blockchain] Block: 2272180
+2020-Aug-22 13:43:32.217850 INFO [Blockchain] Block: 2272181
+2020-Aug-22 13:43:32.284207 INFO [Blockchain] Block: 2272182
+2020-Aug-22 13:43:32.335504 INFO [Blockchain] Block: 2272183
+2020-Aug-22 13:43:32.623164 INFO [Blockchain] Block: 2272184
+2020-Aug-22 13:43:32.688982 INFO [Blockchain] Block: 2272185
+2020-Aug-22 13:43:32.759316 INFO [Blockchain] Block: 2272186
+2020-Aug-22 13:43:32.816548 INFO [Blockchain] Block: 2272187
+2020-Aug-22 13:43:32.870127 INFO [Blockchain] Block: 2272188
+2020-Aug-22 13:43:33.028733 INFO [Blockchain] Block: 2272189
+2020-Aug-22 13:43:33.101736 INFO [Blockchain] Block: 2272190
+2020-Aug-22 13:43:33.154379 INFO [Blockchain] Block: 2272191
+2020-Aug-22 13:43:33.217307 INFO [Blockchain] Block: 2272192
+2020-Aug-22 13:43:33.268909 INFO [Blockchain] Block: 2272193
+2020-Aug-22 13:43:33.424862 INFO [Blockchain] Block: 2272194
+2020-Aug-22 13:43:33.484479 INFO [Blockchain] Block: 2272195
+2020-Aug-22 13:43:33.543705 INFO [Blockchain] Block: 2272196
+2020-Aug-22 13:43:39.975139 INFO [protocol] [88.207.30.172:30158 OUT] Sync data returned unknown top block: 2272195 -> 2272259 [64 blocks (that block was created 0 days) behind] 
+2020-Aug-22 13:43:39.975139 INFO [protocol] SYNCHRONIZATION processing...
+2020-Aug-22 13:43:40.334039 INFO [Blockchain] Block: 2272197
+2020-Aug-22 13:43:40.359479 INFO [Blockchain] Block: 2272198
+2020-Aug-22 13:43:40.400901 INFO [Blockchain] Block: 2272199
+2020-Aug-22 13:43:40.848935 INFO [Blockchain] Block: 2272200
+2020-Aug-22 13:43:40.902695 INFO [Blockchain] Block: 2272201
+2020-Aug-22 13:43:40.947880 INFO [Blockchain] Block: 2272202
+2020-Aug-22 13:43:41.101777 INFO [Blockchain] Block: 2272203
+2020-Aug-22 13:43:41.138648 INFO [Blockchain] Block: 2272204
+2020-Aug-22 13:43:41.182855 INFO [Blockchain] Block: 2272205
+2020-Aug-22 13:43:41.256838 INFO [Blockchain] Block: 2272206
+2020-Aug-22 13:43:41.311158 INFO [Blockchain] Block: 2272207
+2020-Aug-22 13:43:41.366525 INFO [Blockchain] Block: 2272208
+2020-Aug-22 13:43:41.426157 INFO [Blockchain] Block: 2272209
+2020-Aug-22 13:43:41.473246 INFO [Blockchain] Block: 2272210
+2020-Aug-22 13:43:41.528853 INFO [Blockchain] Block: 2272211
+2020-Aug-22 13:43:41.835104 INFO [Blockchain] Block: 2272212
+2020-Aug-22 13:43:41.835648 INFO [protocol] [213.136.89.252:30158 OUT] Sync data returned unknown top block: 2272211 -> 2272259 [48 blocks (that block was created 0 days) behind] 
+2020-Aug-22 13:43:41.835648 INFO [protocol] SYNCHRONIZATION processing...
+2020-Aug-22 13:43:41.836001 INFO [protocol] [18.222.96.134:30158 OUT] Sync data returned unknown top block: 2272211 -> 2272259 [48 blocks (that block was created 0 days) behind] 
+2020-Aug-22 13:43:41.836001 INFO [protocol] SYNCHRONIZATION processing...
+2020-Aug-22 13:43:41.920827 INFO [Blockchain] Block: 2272213
+2020-Aug-22 13:43:41.975296 INFO [Blockchain] Block: 2272214
+2020-Aug-22 13:43:42.050703 INFO [Blockchain] Block: 2272215
+2020-Aug-22 13:43:42.123673 INFO [Blockchain] Block: 2272216
+2020-Aug-22 13:43:42.647494 INFO [Blockchain] Block: 2272217
+2020-Aug-22 13:43:42.710937 INFO [Blockchain] Block: 2272218
+2020-Aug-22 13:43:42.777224 INFO [Blockchain] Block: 2272219
+2020-Aug-22 13:43:42.902152 INFO [Blockchain] Block: 2272220
+2020-Aug-22 13:43:42.946547 INFO [Blockchain] Block: 2272221
+2020-Aug-22 13:43:43.103598 INFO [Blockchain] Block: 2272222
+2020-Aug-22 13:43:43.167942 INFO [Blockchain] Block: 2272223
+2020-Aug-22 13:43:43.561476 INFO [Blockchain] Block: 2272224
+2020-Aug-22 13:43:43.619915 INFO [Blockchain] Block: 2272225
+2020-Aug-22 13:43:43.716518 INFO [Blockchain] Block: 2272226
+2020-Aug-22 13:43:43.774457 INFO [Blockchain] Block: 2272227
+2020-Aug-22 13:43:43.919230 INFO [Blockchain] Block: 2272228
+2020-Aug-22 13:43:43.973778 INFO [Blockchain] Block: 2272229
+2020-Aug-22 13:43:44.153485 INFO [Blockchain] Block: 2272230
+2020-Aug-22 13:43:44.206688 INFO [Blockchain] Block: 2272231
+2020-Aug-22 13:43:44.267049 INFO [Blockchain] Block: 2272232
+2020-Aug-22 13:43:44.368135 INFO [Blockchain] Block: 2272233
+2020-Aug-22 13:43:44.413840 INFO [Blockchain] Block: 2272234
+2020-Aug-22 13:43:44.521630 INFO [Blockchain] Block: 2272235
+2020-Aug-22 13:43:44.588512 INFO [Blockchain] Block: 2272236
+2020-Aug-22 13:43:44.702920 INFO [Blockchain] Block: 2272237
+2020-Aug-22 13:43:44.756903 INFO [Blockchain] Block: 2272238
+2020-Aug-22 13:43:44.812681 INFO [Blockchain] Block: 2272239
+2020-Aug-22 13:43:44.946080 INFO [Blockchain] Block: 2272240
+2020-Aug-22 13:43:45.013861 INFO [Blockchain] Block: 2272241
+2020-Aug-22 13:43:45.075222 INFO [Blockchain] Block: 2272242
+2020-Aug-22 13:43:45.148440 INFO [Blockchain] Block: 2272243
+2020-Aug-22 13:43:45.210749 INFO [Blockchain] Block: 2272244
+2020-Aug-22 13:43:45.269659 INFO [Blockchain] Block: 2272245
+2020-Aug-22 13:43:45.327710 INFO [Blockchain] Block: 2272246
+2020-Aug-22 13:43:46.303495 INFO [Blockchain] Block: 2272247
+2020-Aug-22 13:43:46.428988 INFO [Blockchain] Block: 2272248
+2020-Aug-22 13:43:46.487567 INFO [Blockchain] Block: 2272249
+2020-Aug-22 13:43:46.548342 INFO [Blockchain] Block: 2272250
+2020-Aug-22 13:43:46.638800 INFO [Blockchain] Block: 2272251
+2020-Aug-22 13:43:46.723290 INFO [Blockchain] Block: 2272252
+2020-Aug-22 13:43:46.797546 INFO [Blockchain] Block: 2272253
+2020-Aug-22 13:43:47.160690 INFO [Blockchain] Block: 2272254
+2020-Aug-22 13:43:47.228894 INFO [Blockchain] Block: 2272255
+2020-Aug-22 13:43:47.290726 INFO [Blockchain] Block: 2272256
+2020-Aug-22 13:43:47.351911 INFO [Blockchain] Block: 2272257
+2020-Aug-22 13:43:47.393934 INFO [Blockchain] Block: 2272258
+2020-Aug-22 13:43:47.394161 INFO [protocol] calling requestMissingPoolTransactions...
+2020-Aug-22 13:43:47.394260 INFO [protocol] [116.203.231.252:20266 OUT] SYNCHRONIZED OK
+2020-Aug-22 13:43:47.394337 INFO [protocol] reload complete!
+2020-Aug-22 13:43:47.511979 INFO [Blockchain] Block: 2272259
+2020-Aug-22 13:43:47.562916 INFO [Blockchain] Block: 2272260
+2020-Aug-22 13:43:47.605225 INFO [Blockchain] Block: 2272261
+2020-Aug-22 13:43:52.832730 INFO [Blockchain] Block: 2272262
+2020-Aug-22 13:43:54.069699 INFO [Blockchain] Block: 2272263
+2020-Aug-22 13:43:55.991428 INFO [Blockchain] Block: 2272264
+2020-Aug-22 13:44:43.406287 INFO [core] daemon synchronizing...
+2020-Aug-22 13:46:18.468900 INFO [Blockchain] Block: 2272265
+2020-Aug-22 13:46:29.990059 INFO [node_server] Stop signal sent
+2020-Aug-22 13:46:29.990090 INFO [node_server] Stopping NodeServer and it's 5 connections...
+2020-Aug-22 13:46:30.992849 INFO [node_server] NodeServer loop stopped
+2020-Aug-22 13:46:30.993067 INFO [daemon] p2p net loop stopped
+2020-Aug-22 13:46:30.993158 INFO [daemon] Stopping core rpc server...
+2020-Aug-22 13:46:30.993268 INFO [daemon] Deinitializing core...
+2020-Aug-22 13:46:30.993318 INFO [miner] Mining has been stopped, 0 finished
+2020-Aug-22 13:46:30.997402 INFO [Blockchain] Saving blockchain...
+2020-Aug-22 13:46:31.055534 INFO [BlockCacheSerializer] calling serialize for block cache save...
+2020-Aug-22 13:46:31.055645 INFO [BlockCacheSerializer] - saving block index...
+2020-Aug-22 13:46:31.309671 INFO [BlockCacheSerializer] - saving transaction map...
+2020-Aug-22 13:46:32.537098 INFO [BlockCacheSerializer] - saving spent keys...
+2020-Aug-22 13:46:37.096740 INFO [BlockCacheSerializer] - saving outputs...
+2020-Aug-22 13:46:38.957392 INFO [BlockCacheSerializer] - saving multi-signature outputs...
+2020-Aug-22 13:46:38.959291 INFO [BlockCacheSerializer] Serialization time: 7903ms
+2020-Aug-22 13:46:39.085244 INFO [Blockchain] Saving blockchain indices...
+2020-Aug-22 13:46:39.086897 INFO [BlockchainIndicesSerializer] - saving paymentID index...
+2020-Aug-22 13:46:39.087811 INFO [BlockchainIndicesSerializer] - saving timestamp index...
+2020-Aug-22 13:46:39.158797 INFO [BlockchainIndicesSerializer] - saving generated transactions index...
+2020-Aug-22 13:46:39.160336 INFO [daemon] Deinitializing p2p...
+2020-Aug-22 13:46:39.259262 INFO [miner] Mining has been stopped, 0 finished
+2020-Aug-22 13:46:40.114509 INFO [daemon] Node stopped.
