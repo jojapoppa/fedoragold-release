@@ -247,21 +247,42 @@ queryblockslite.bin
 
 get_block_details_by_height
   function: details on blocks by height
-  
+    request.blockHeight
+    response.blockDetails
+    response.status
+    
 get_block_details_by_hash
   function: details on blocks by hash
+    request.hash
+    response.blockDetails
+    response.status
   
 get_blocks_details_by_heights
   function: details for mult blocks with mult heights
+    request.blockHeights
+    response.blockDetails
+    response.status
   
 get_blocks_details_by_hashes
   function: details for mult blocks with mult hashes
-
+    request.blockHashes
+    response.blocks
+    response.status
+  
 get_transaction_details_by_hash
   function: details on a single transaction using a hash
-
+    request.hash
+    response.transaction
+    response.status
+    
 get_transaction_details_by_hashes
   function: details for mult transactions with using mult hashes
-  
+    request.transactionHashes
+    response.transactions
+    response.status
+    
 get_transaction_hashes_by_payment_id
   function: get transaction hashes associated with a payment id
+    request.paymentId
+    response.transactionHashes
+    response.status
