@@ -5,25 +5,25 @@ Note: FED has 8 decimal places
 Note: All fedoragold_walletd calls are POST (not GET like fedorgold daemon)
 
 Example: walletd getStatus
-curl -X POST -i -H "Accept: application/json" -d '{"jsonrpc": "2.0", "id": "test", "method":"getStatus"}' http://localhost:9090/json_rpc
+curl -u fedadmin -X POST -i -H "Accept: application/json" -d '{"jsonrpc": "2.0", "id": "test", "method":"getStatus"}' http://localhost:9090/json_rpc
 
 Example: walletd getBalance
-curl -X POST -i -H "Accept: application/json" -d '{"params": {"address": "NJkTBid4ZXSPVd6pVSRhRvPN6Qsa32Gbfe1uRLbCxnMQemVh1787L2r9B2Q3FjSpbbbhChRbdfJAH777Q4Sqi1V4M89d8X8"}, "jsonrpc": "2.0", "id": "test", "method":"getBalance"}' http://localhost:9090/json_rpc
+curl -u fedadmin -X POST -i -H "Accept: application/json" -d '{"params": {"address": "NJkTBid4ZXSPVd6pVSRhRvPN6Qsa32Gbfe1uRLbCxnMQemVh1787L2r9B2Q3FjSpbbbhChRbdfJAH777Q4Sqi1V4M89d8X8"}, "jsonrpc": "2.0", "id": "test", "method":"getBalance"}' http://localhost:9090/json_rpc
 
 Example: walletd getAddresses
-curl -X POST -i -H "Accept: application/json" -d '{"params": {}, "jsonrpc": "2.0", "id": "test", "method":"getAddresses"}' http://localhost:9090/json_rpc
+curl -u fedadmin -X POST -i -H "Accept: application/json" -d '{"params": {}, "jsonrpc": "2.0", "id": "test", "method":"getAddresses"}' http://localhost:9090/json_rpc
 
 Example: walletd getTransactions by block
-curl -X POST -i -H "Accept: application/json" -d '{"params": {"firstBlockIndex": 1331400, "blockCount": 1}, "jsonrpc": "2.0", "id": "test", "method":"getTransactions"}' http://localhost:9090/json_rpc
+curl -u fedadmin -X POST -i -H "Accept: application/json" -d '{"params": {"firstBlockIndex": 1331400, "blockCount": 1}, "jsonrpc": "2.0", "id": "test", "method":"getTransactions"}' http://localhost:9090/json_rpc
 
 Example: walletd getTransactionHashes by address
-curl -X POST -i -H "Accept: application/json" -d '{"params": {"firstBlockIndex": 1331400, "blockCount": 1, "addresses": ["NJkTBid4ZXSPVd6pVSRhRvPN6Qsa32Gbfe1uRLbCxnMQemVh1787L2r9B2Q3FjSpbbbhChRbdfJAH777Q4Sqi1V4M89d8X8"]}, "jsonrpc": "2.0", "id": "test", "method":"getTransactionHashes"}' http://localhost:9090/json_rpc
+curl -u fedadmin -X POST -i -H "Accept: application/json" -d '{"params": {"firstBlockIndex": 1331400, "blockCount": 1, "addresses": ["NJkTBid4ZXSPVd6pVSRhRvPN6Qsa32Gbfe1uRLbCxnMQemVh1787L2r9B2Q3FjSpbbbhChRbdfJAH777Q4Sqi1V4M89d8X8"]}, "jsonrpc": "2.0", "id": "test", "method":"getTransactionHashes"}' http://localhost:9090/json_rpc
 
 Example: walletd getTransactions by hash
-curl -X POST -i -H "Accept: application/json" -d '{"params": {"blockHash": "b3bc90d04ca017fcaf5ee2c8efda95b1ac450beca30a9985e2a9f302f0afed22", "blockCount": 1, "addresses": ["NJkTBid4ZXSPVd6pVSRhRvPN6Qsa32Gbfe1uRLbCxnMQemVh1787L2r9B2Q3FjSpbbbhChRbdfJAH777Q4Sqi1V4M89d8X8"]}, "jsonrpc": "2.0", "id": "test", "method":"getTransactions"}' http://localhost:9090/json_rpc
+curl -u fedadmin -X POST -i -H "Accept: application/json" -d '{"params": {"blockHash": "b3bc90d04ca017fcaf5ee2c8efda95b1ac450beca30a9985e2a9f302f0afed22", "blockCount": 1, "addresses": ["NJkTBid4ZXSPVd6pVSRhRvPN6Qsa32Gbfe1uRLbCxnMQemVh1787L2r9B2Q3FjSpbbbhChRbdfJAH777Q4Sqi1V4M89d8X8"]}, "jsonrpc": "2.0", "id": "test", "method":"getTransactions"}' http://localhost:9090/json_rpc
 
 Example GET (daemon height): getheight (just example of daemon call - below are docs for walletd)
-curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getheight  
+curl -u fedadmin -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getheight  
 
 All Walletd JSON RPC Calls Are Described Below:
 
