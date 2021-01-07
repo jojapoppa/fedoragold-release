@@ -245,3 +245,23 @@ queryblockslite.bin
     response.fullOffset
     response.items
 
+get_block_details_by_height
+  function: details on blocks by height
+  
+get_block_details_by_hash
+  function: details on blocks by hash
+  
+get_blocks_details_by_heights
+  function: details for mult blocks with mult heights
+  
+get_blocks_details_by_hashes
+  function: details for mult blocks with mult hashes
+
+get_transaction_details_by_hash
+  function: details on a single transaction using a hash
+
+get_transaction_details_by_hashes
+  function: details for mult transactions with using mult hashes
+  
+get_transaction_hashes_by_payment_id
+  function: get transaction hashes associated with a payment id
