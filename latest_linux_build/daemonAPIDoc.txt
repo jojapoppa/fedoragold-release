@@ -286,3 +286,38 @@ get_transaction_hashes_by_payment_id
     request.paymentId
     response.transactionHashes
     response.status
+
+gettransactionspool
+  function: get pool info short version
+  response.transactions
+    hash
+    fee
+    amount_out
+    size
+    receive_time
+  response.status
+
+getrawtransactionspool
+  function: raw data for transaction pool
+  reponse.transactions
+    transaction
+    hash
+    block_hash
+    height
+    fee
+    timestamp
+    output_indexes
+  response.status
+
+gettransactionsinpool
+  function: datail info for transaction pool
+  response.transactions
+    transaction
+    hash
+    block_hash
+    height
+    fee
+    timestamp
+    output_indexes
+  response.status
+
