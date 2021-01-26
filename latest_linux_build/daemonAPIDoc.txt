@@ -310,7 +310,7 @@ getrawtransactionspool
   response.status
 
 gettransactionsinpool
-  function: datail info for transaction pool
+  function: detail info for transaction pool
   response.transactions
     transaction
     hash
@@ -320,4 +320,39 @@ gettransactionsinpool
     timestamp
     output_indexes
   response.status
+
+checktransactionkey
+  function: check transacdtion via private key
+  request
+    transaction_id
+    transaction_key
+    address
+  response
+    amount
+    outputs
+    status
+
+checktransactionviewkey
+  function: check transaction via view key
+  request
+    transaction_id
+    view_key
+    address
+  response
+    amount
+    outputs
+    status
+
+checktransactionproof
+  function: provide transaction proof
+  request
+    transaction_id
+    destination_address
+    signature
+  response
+    signature_valid
+    received_amount
+    outputs
+    confirmations
+    status
 
