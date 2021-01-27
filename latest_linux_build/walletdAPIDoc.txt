@@ -229,3 +229,10 @@ estimateFusion
   response.fusionReadyCount
   response.totalOutputCount
 
+getTransactionProof
+ function: get proof that you send some funds
+  request.transactionHash
+  request.destinationAddress
+  request.transactionSecretKey
+  response.transactionProof
+
