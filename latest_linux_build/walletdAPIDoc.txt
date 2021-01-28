@@ -152,6 +152,11 @@ getTransaction
     extra
     paymentId
 
+getTransactionSecretKey
+  function: get secret key of this specific transaction
+  request.transactionHash
+  response.transactionSecretKey
+
 sendTransaction
  function: handleSendTransaction
   request
@@ -235,4 +240,9 @@ getTransactionProof
   request.destinationAddress
   request.transactionSecretKey
   response.transactionProof
+
+stop
+  function: forse the walletd daemon to halt
+  request none
+  response.status
 
