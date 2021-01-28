@@ -177,6 +177,7 @@ sendTransaction
     paymentId (optional)
     unlockTime (measured in blocks)
   response.transactionHash
+  response.proof
 
 createDelayedTransaction
  function: handleCreateDelayedTransaction
