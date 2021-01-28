@@ -25,6 +25,12 @@ curl -u fedadmin -X POST -i -H "Accept: application/json" -d '{"params": {"block
 Example GET (daemon height): getheight (just example of daemon call - below are docs for walletd)
 curl -u fedadmin -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getheight  
 
+Example GET transaction secret key
+curl -u fedadmin -X POST -i -H "Accept: application/json" -d '{"params": {"transactionHash": "35ab23834e12163001f542693dac7de024e15763d5fc9f1de8046ef4ea06bcf3"}, "jsonrpc": "2.0", "id": "test", "method":"getTransactionSecretKey"}' http://localhost:31876/json_rpc
+
+Example GET Proof of Payment
+curl -u fedadmin -X POST -i -H "Accept: application/json" -d '{"params": {"transactionHash": "35ab23834e12163001f542693dac7de024e15763d5fc9f1de8046ef4ea06bcf3", "destinationAddress": "NJrpNXUhLVyQD7cjmQGu5JiZWR1md5z11SLtyZ3wyRgLFfwS8vXv1iRDK4KqiEYUnmTPL857XENijCh3nbXdhXheJYhZu2Q", "transactionSecretKey": "a345cd8a51d5c44dea43bc19e1fa0926c3ebe3d93bc4273c93517423d56cd40a"}, "jsonrpc": "2.0", "id": "test", "method":"getTransactionProof"}' http://localhost:31876/json_rpc
+
 All Walletd JSON RPC Calls Are Described Below:
 
 save
