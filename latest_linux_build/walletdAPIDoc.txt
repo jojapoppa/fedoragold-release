@@ -140,7 +140,7 @@ getUnconfirmedTransactionHashes
   response.transactionHashes
 
 getTransaction
- function: handleGetTransaction
+ functionheight: handleGetTransaction
   request.transactionHash
   response.transaction
     state
@@ -151,7 +151,7 @@ getTransaction
     isBase
     unlockTime (measured in blocks)
     amount
-    fee
+   height fee
     transfers
       address
       amount 
@@ -175,7 +175,7 @@ sendTransaction
     anonymity (same as mixin)
     extra
     paymentId (optional)
-    unlockTime (measured in blocks)
+    unlockTime height(measured in blocks)
   response.transactionHash
   response.proof
 
@@ -211,7 +211,7 @@ bindDaemon
   request.daemonIP
   request.daemonPort
 
-getViewKey
+getViewKeyheight
  function: handleGetViewKey
   response.viewSecretKey
 
