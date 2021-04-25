@@ -1,0 +1,358 @@
+All fedoragold_daemon calls are JSON and are shown below:
+
+Example GET (daemon height): getheight
+curl -X GET -i -H "Accept: application/json" -d '{"jsonrpc": "2.0"}' http://localhost:30159/getheight
+
+getheight
+  function: get the height
+    response.height
+    response.status
+
+iscoreready
+  function: is the daemon ready for proessing
+    response.Iscoreready
+    response.status
+
+getblocks.bin
+  function: quickly get the blocks by id
+    request.blockids
+    response.blocks
+    response.start_height
+    response.current_height
+    response.status
+
+getblockchainindexes
+  function: get block indexes by id
+    request.txid
+    response.o_indexes
+    response.status
+
+getblock
+  function: get block by height
+    request.height
+    response.alreadyGeneratedCoins
+    response.blocksize
+    response.difficulty
+    response.currentmediansize
+    response.hash
+    response.transactionHashes
+    response.major_version
+    response.minor_version
+    response.timestamp
+    response.prev_hash
+    response.nonce
+    response.depth
+    response.reward
+    response.status
+
+gettransaction
+  function: get a transaction with a hash
+  request.txhash
+  request.blknum
+  request.txnum
+  response.global_output_indexes
+  response.hash
+  response.txsize
+  response.block
+  response.blockheight
+  response.orphan_status
+  response.inputamt
+  response.outputamt
+  response.inputsamts
+  response.outputsamts
+  response.outputkeys
+  response.prefix
+  response.version
+  response.unlocktime
+  response.fee
+  response.paymentid
+  response.extra
+  response.status
+
+gettransactions
+  function: get all of the transactions
+    response.txs
+    response.status
+
+get_pool_changes.bin
+  function: get info on pooled transactions 
+    request.tailBlockId
+    request.knowntxsids
+    response.isTailBlockActual
+    response.addedTxs
+    response.deletedTxsIds
+    response.status
+
+get_pool_changes_lite.bin
+  function: minimal info on pooled transactions
+    request.tailBlockId
+    request.knownTxsIds
+    response.isTailBlockActual
+    response.addedTxs
+    response.deletedTxsIds
+    response.status
+
+get_o_indexes.bin
+  function: gets the output indexes by id
+    request.txid
+    response.o_indexes
+    response.status
+
+getrandom_outs.bin
+  function: gets outputs for amounts
+    request.amounts
+    request.outs_count
+    response.outs
+    response.status
+
+sendrawtransaction
+  function: send a transaction directly
+    request.tx_as_hex
+    response.status
+
+start_mining
+  function: mine from the daemon  
+    request.miner_address
+    request.threads_count
+    response.status
+
+stop_mining
+  function: stop the daemon miner
+    response.status
+
+getinfo
+  function: general info about daemon status
+    response.status
+    response.height
+    response.difficulty
+    response.tx_count
+    response.tx_pool_size
+    response.alt_blocks_count
+    response.outgoing_connections_count
+    response.incoming_connections_count
+    response.white_peerlist_size
+    response.grey_peerlist_size
+    response.lastKnownBlockIndex
+
+stop_daemon
+  function: shut down the daemon cleanly
+    response.status
+
+getblockcount
+  function: gets block count
+    response.count
+    response.status
+
+getblockhash
+  function: get block hash by height
+    request.height
+    response.hash
+
+getblocktemplate
+  function: get the block template
+    request.reserve_size
+    request.wallet_address
+    response.difficulty
+    response.height
+    response.reserved_offset
+    response.blocktemplate_blob
+    responsei.status
+
+getcurrencyid
+  function: what is the currency ID of FED 
+    response.currency_id_blob
+
+submitblock
+  function: submit a block
+    request.blockblob
+    response.major_version
+    response.minor_version
+    response.timestamp
+    response.prev_hash
+    response.nonce
+    response.orphan_status
+    response.height
+    response.depth
+    response.hash
+    response.difficulty
+    response.reward
+    response.status
+
+getlastblockheader
+  function: get header of last block
+    response.major_version
+    response.minor_version
+    response.timestamp
+    response.prev_hash
+    response.nonce
+    response.orphan_status
+    response.height
+    response.depth
+    response.hash
+    response.difficulty
+    response.reward
+    response.status
+
+getblockheaderbyhash
+  function: get header by hash
+    request.hash
+    response.major_version
+    response.minor_version
+    response.timestamp
+    response.prev_hash
+    response.nonce
+    response.orphan_status
+    response.height
+    response.depth
+    response.hash
+    response.difficulty
+    response.reward
+    response.status
+
+getblockheaderbyheight
+  function: get header by height
+    request.height
+    response.major_version
+    response.minor_version
+    response.timestamp
+    response.prev_hash
+    response.nonce
+    response.orphan_status
+    response.height
+    response.depth
+    response.hash
+    response.difficulty
+    response.reward
+    response.status
+
+queryblocks.bin
+  function: get blocks by ids
+    request.block_ids
+    request.timestamp
+    response.status
+    response.start_height
+    response.current_height
+    response.full_offset
+    response.items
+
+queryblockslite.bin
+  function: minimal block data by ids
+    request.blockIds
+    request.timestamp
+    response.status
+    response.startHeight
+    response.currentHeight
+    response.fullOffset
+    response.items
+
+get_block_details_by_height
+  function: details on blocks by height
+    request.blockHeight
+    response.blockDetails
+    response.status
+    
+get_block_details_by_hash
+  function: details on blocks by hash
+    request.hash
+    response.blockDetails
+    response.status
+  
+get_blocks_details_by_heights
+  function: details for mult blocks with mult heights
+    request.blockHeights
+    response.blockDetails
+    response.status
+  
+get_blocks_details_by_hashes
+  function: details for mult blocks with mult hashes
+    request.blockHashes
+    response.blocks
+    response.status
+  
+get_transaction_details_by_hash
+  function: details on a single transaction using a hash
+    request.hash
+    response.transaction
+    response.status
+    
+get_transaction_details_by_hashes
+  function: details for mult transactions with using mult hashes
+    request.transactionHashes
+    response.transactions
+    response.status
+    
+get_transaction_hashes_by_payment_id
+  function: get transaction hashes associated with a payment id
+    request.paymentId
+    response.transactionHashes
+    response.status
+
+gettransactionspool
+  function: get pool info short version
+  response.transactions
+    hash
+    fee
+    amount_out
+    size
+    receive_time
+  response.status
+
+getrawtransactionspool
+  function: raw data for transaction pool
+  reponse.transactions
+    transaction
+    hash
+    block_hash
+    height
+    fee
+    timestamp
+    output_indexes
+  response.status
+
+gettransactionsinpool
+  function: detail info for transaction pool
+  response.transactions
+    transaction
+    hash
+    block_hash
+    height
+    fee
+    timestamp
+    output_indexes
+  response.status
+
+checktransactionkey
+  function: check transacdtion via private key
+  request
+    transaction_id
+    transaction_key
+    address
+  response
+    amount
+    outputs
+    status
+
+checktransactionviewkey
+  function: check transaction via view key
+  request
+    transaction_id
+    view_key
+    address
+  response
+    amount
+    outputs
+    status
+
+checktransactionproof
+  function: provide transaction proof
+  request
+    transaction_id
+    destination_address
+    signature
+  response
+    signature_valid
+    received_amount
+    outputs
+    confirmations
+    status
+
